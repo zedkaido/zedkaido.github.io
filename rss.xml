@@ -19,7 +19,7 @@
 	</item>
 
 	<item>
-		<category>writing</category<
+		<category>writing</category>
 		<title>Dead Web</title>
 		<link>https://zedkaido.com/writing/dead-web/</link>
 		<guid>https://zedkaido.com/writing/dead-web/</guid>
@@ -30,7 +30,7 @@
 	</item>
 
 	<item>
-		<category>writing</category<
+		<category>writing</category>
 		<title>Offline</title>
 		<link>https://zedkaido.com/writing/offline/</link>
 		<guid>https://zedkaido.com/writing/offline/</guid>
@@ -41,7 +41,7 @@
 	</item>
 
 	<item>
-		<category>writing</category<
+		<category>writing</category>
 		<title>Seamless/Flicker-Free Theme Switching in Svelte-kit</title>
 		<link>https://zedkaido.com/writing/flicker-free-theme-switching-in-svelte-kit/</link>
 		<guid>https://zedkaido.com/writing/flicker-free-theme-switching-in-svelte-kit/</guid>
@@ -52,7 +52,7 @@
 	</item>
 
 	<item>
-		<category>writing</category<
+		<category>writing</category>
 		<title>How to add www support to Cloudflare Pages.</title>
 		<link>https://zedkaido.com/writing/how-to-add-www-support-to-cloudflare-pages/</link>
 		<guid>https://zedkaido.com/writing/how-to-add-www-support-to-cloudflare-pages/</guid>
