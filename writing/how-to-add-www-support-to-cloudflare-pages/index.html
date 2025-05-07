@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			How to Add www Support to Cloudflare Pages
+		</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta charset="UTF-8">
+		<meta name="description" content="A step-by-step guide on how to set-up www domain redirection using Cloudflare Page Rules."> 
+		<meta name="author" content="Zed Kaido">
+		<meta name="date" content="2023-05-23">
+		<link rel="stylesheet" href="/style.css">
+		<link rel="icon" href="/favicon.ico" />
+	</head>
+	<body>
+		<div class="page">
+			<div class="header">
+				<p>笑 <a href="/">zedkaido.com</a> &gt; <a href="/writing">writing</a></p>
+			</div>
+			<article>
+				<h1>
+					<a href="./">
+						How to Add <code>www</code> Support to Cloudflare Pages
+					</a>
+				</h1>
+				<p>
+					If you use cloudflare pages, and like me, tried visiting <code>www.website.com</code> only to find out that it was not available - you are in the right place. This article provides some direction on how to setup redirection of <code>www.website.com</code> to <code>website.com</code> and vice-versa using page rules. 
+				<p>
+
+				<h3>
+					Redirecting <code>www.website.com</code> to <code>website.com</code>
+				</h3>
+				<ol>
+					<li>
+						Open your Cloudflare Dashboard: <a href="https://dash.cloudflare.com">https://dash.cloudflare.com</a>
+					</li>
+					<li>Go to: Websites &gt; website.com &gt; DNS</li>
+					<li>
+						Add a DNS record for <code>www</code> to
+						<code>website.com</code>:
+					</li>
+					<ul>
+						<li><b>Type</b>: A</li>
+						<li><b>Name</b>: www</li>
+						<li><b>IPv4</b>: 192.0.2.1</li>
+					</ul>
+					<li>Go to: Rules &gt; Create Page Rule</li>
+					<ul>
+						<li><b>URL</b>: <code>www.website.com/*</code></li>
+						<li><b>Setting</b>: Forwarding URL</li>
+						<li><b>Status Code: 302</b> - Temporary Redirect (to start with)</li>
+						<li><b>Destination URL</b>: <code>https://website.com/$1</code></li>
+					</ul>
+					<li>Voila! <code>www.website.com</code> is now accessible!</li>
+					<li>
+						If this is the desired effect you want, change the Status Code from "<b>302 - Temporary Redirect</b>" to "<b>301 - Permanent Redirect</b>"
+				   	</li>
+				</ol>
+
+				<hr>
+
+				<p>
+				<b>Note</b>: The asterisk (<code>*</code>) means it will forward all pages, and the <code>$1</code> will keep the path intact: <code>www.website.com/page</code> &rarr; <code>website.com/page</code>.
+				</p>
+
+				<hr>
+
+				<h3>
+					Redirecting <code>website.com</code> to <code>www.website.com</code>
+				</h3>
+
+				<ol>
+					<li>
+						Open your Cloudflare Dashboard: <a href="https://dash.cloudflare.com">https://dash.cloudflare.com</a>
+					</li>
+					<li>Go to: Websites &gt; <code>website.com</code> &gt; DNS</li>
+					<li>Add a DNS record for @ to <code>website.com</code>:</li>
+					<ul>
+						<li><b>Type</b>: A</li>
+						<li><b>Name</b>: @</li>
+						<li><b>IPv4</b>: 192.0.2.1</li>
+					</ul>
+					<li>Go to: Rules &gt; Create Page Rule</li>
+					<ul>
+						<li><b>URL</b>: <code>website.com/*</code></li>
+						<li><b>Setting</b>: Forwarding URL</li>
+						<li><b>Status Code</b>: 302 - Temporary Redirect</li>
+						<li><b>Destination URL</b>: <code>https://www.website.com/$1</code></li>
+					</ul>
+					<li>
+						Voila! <code>website.com</code> will redirect you to
+						<code>www.website.com</code>!
+					</li>
+					<li>
+						If this is the desired effect you want, change the Status Code from "302 - Temporary Redirect" to <b>"301 - Permanent Redirect"</b>
+					</li>
+				</ol>
+
+				<hr>
+				<p>
+					<span class="date">2023-05-23</span><br>
+					by Zed Kaido
+				</p>
+			</article>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Seamless/Flicker-Free Theme Switching in Svelte-kit - Zed Kaido
+		</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta charset="utf-8">
+		<meta name="description" content="A practical solution to flicker-free theme switching in Svelte-kit (can be adapted to other frameworks)">
+		<meta name="author" content="Zed Kaido">
+		<meta name="date" content="2023-08-01">
+		<link rel="stylesheet" href="/style.css">
+		<link rel="icon" href="/favicon.ico" />
+	</head>
+	<body>
+		<div class="page">
+			<div class="header">
+				<p>笑 <a href="/">zedkaido.com</a> &gt; <a href="/writing">writing</a></p>
+			</div>
+			<article>
+				<h1>
+					<a href="./">
+						Seamless/Flicker-Free Theme Switching in Svelte-kit
+					</a>
+				</h1>
+				<p>Following are some steps you can follow to implement/fix theme screen flickering on page reload/load. These methods can be adapted to any framework.
+				</p>
+				<p>
+					<b>Step 1:</b> Create a <code>store</code> for managing theme state:
+				</p>
+<div class="pre-header">
+	src/lib/stores/theme.js
+</div>
+<pre>
+import { writable } from 'svelte/store';
+
+const isBrowser = typeof window !== 'undefined';
+const storedTheme = isBrowser ? localStorage.theme : null;
+const theme = writable(storedTheme || 'system');
+
+if (isBrowser) {
+	theme.subscribe(v => {
+		localStorage.theme = v;
+	});
+}
+
+export { theme };
+</pre>
+
+				<p>
+					<b>Step 2:</b> In <code>+layout.svelte</code> subscribe to
+					the theme store created in the previous step and update the
+					<span class="variable">document.body</span>
+					class list to the current value of the <span class="variable">store</span>.
+				</p>
+
+<div class="pre-header">
+	src/routes/+layout.svelte
+</div>
+<pre>
+&lt;script&gt;
+import { theme } from '$lib/stores/theme';
+	import { onMount } from 'svelte';
+
+	onMount(() =&gt; {
+		theme.subscribe(v =&gt; {
+			const bodyClassList = document.body.classList;
+			bodyClassList.remove('light', 'system', 'dark');
+			bodyClassList.add(v);
+		});
+	});
+&lt;/script&gt;
+</pre>
+
+				<p>
+					<b>Step 3:</b> Add your preffered method for theme switching:
+				</p>
+
+<div class="pre-header">
+	src/routes/+layout.svelte
+</div>
+<pre>
+&lt;div class="header"&gt;
+	&lt;select bind:value={$theme} class="theme-selector"&gt;
+		&lt;option value="system"&gt;System&lt;/option&gt;
+		&lt;option value="light"&gt;Light&lt;/option&gt;
+		&lt;option value="dark"&gt;Dark&lt;/option&gt;
+	&lt;/select&gt;
+&lt;/div&gt;
+</pre>
+
+				<p>
+					<b>Step 4:</b> Create a <code>stylesheet.css</code> file and define <code>CSS variables</code> for light and dark themes using the <code>prefers-color-scheme</code> media query.
+				</p>
+
+<div class="pre-header">
+	src/lib/styles/stylesheet.css
+</div>
+<pre>
+<span class="comment">/* Define light theme styles */</span>
+@media screen and (prefers-color-scheme: light) {
+	:root {
+		<span class="comment">/* Light theme CSS variables */</span>
+	}
+	body.dark {
+		<span class="comment">/* Override specific styles for the dark theme */</span>
+	}
+}
+
+<span class="comment">/* Define dark theme styles */</span>
+@media screen and (prefers-color-scheme: dark) {
+	:root {
+		<span class="comment">/* Dark theme CSS variables */</span>
+	}
+	body.light {
+		<span class="comment">/* Override specific styles for the light theme */</span>
+	}
+}
+</pre>
+
+				<p>
+					<b>Step 5:</b> In <code>app.html</code>, set the initial theme class on <code>document.body</code> based on the stored theme or user's color scheme preference.
+				</p>
+
+<div class="pre-header">
+	app.html
+</div>
+<pre>
+&lt;body data-sveltekit-preload-data="hover"&gt;
+	&lt;script&gt;
+		const storedTheme = localStorage.getItem('theme');
+		const systemPreferredTheme = window.matchMedia(
+			'(prefers-color-scheme: dark)'
+		).matches ? 'dark' : 'light';
+		document.body.classList.remove('light', 'dark');
+		document.body.classList.add(
+			storedTheme ?? systemPreferredTheme
+		);
+	&lt;/script&gt;
+&lt;/body&gt;
+</pre>
+
+				<p>
+					<span class="date">2023-08-01</span><br>
+					by Zed Kaido
+				</p>
+			</article>
+		</div>
+	</body>
+</html>

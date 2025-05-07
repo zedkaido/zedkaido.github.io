@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Photography by Zed Kaido</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta charset="utf-8">
+		<meta name="author" content="Zed Kaido">
+		<link rel="stylesheet" href="../style.css">
+		<link rel="icon" href="/favicon.ico" />
+	</head>
+	<style>
+		.photogrid {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 1em;
+			width: 100%;
+			padding-bottom: 1em;
+		}
+		.photo {
+			width: 100%;
+			height: auto;
+		}
+		@media (max-width: 800px) {
+			.photogrid { grid-template-columns: 1fr; }
+		}
+	</style>
+	<body>
+		<div class="page maxwidth">
+			<div class="header">
+				<p>笑 <a href="/">zedkaido.com</a> &gt; <a href="./">photography</a></p>
+			</div>
+			<h1>Photography</h1>
+			<p class="by">by Zed Kaido</p>
+				
+			<div class="quote-block" style="max-width: 380px;">
+				<hr><p><q>A picture is worth a thousand words.</q></p><hr>
+			</div>
+
+			<div class="photogrid">
+				<a href="/static/photography/9.webp" target="_blank">
+					<img loading="lazy" id="9" class="photo" alt="Dark on White Typogrpahy" src="/static/photography/9-min.webp" />
+				</a>
+				<a href="/static/photography/8.webp" target="_blank">
+					<img loading="lazy" id="8" class="photo" alt="Circle in the dark, what is it?" src="/static/photography/8-min.webp"/>
+				</a>
+				<a href="/static/photography/7.webp" target="_blank">
+					<img loading="lazy" id="7" class="photo" alt="Eyes wide open. Suspense. Fear." src="/static/photography/7-min.webp"/>
+				</a>
+				<a href="/static/photography/6.webp" target="_blank">
+					<img loading="lazy" id="6" class="photo" alt="Light, Energy" src="/static/photography/6-min.webp"/>
+				</a>
+				<a href="/static/photography/5.webp" target="_blank">
+					<img loading="lazy" id="5" class="photo" alt="White Flare in the Dark" src="/static/photography/5-min.webp"/>
+				</a>
+				<a href="/static/photography/4.webp" target="_blank">
+					<img loading="lazy" id="4" class="photo" alt="Sing out Loud" src="/static/photography/4-min.webp"/>
+				</a>
+				<a href="/static/photography/3.webp" target="_blank" id="3">
+					<img loading="lazy" id="3" class="photo" alt="Motion Blur, Dancing Face" src="/static/photography/3-min.webp"/>
+				</a>
+				<a href="/static/photography/2.webp" target="_blank" id="2">
+					<img loading="lazy" id="2" class="photo" alt="EQ to +6" src="/static/photography/2-min.webp"/>
+				</a>
+				<a href="/static/photography/1.webp" target="_blank" id="1">
+					<img loading="lazy" id="1" class="photo" alt="Visual Surprise" src="/static/photography/1-min.webp"/>
+				</a>
+				<a href="/static/photography/0.webp" target="_blank" id="0">
+					<img loading="lazy" id="1" class="photo" alt="John Miles Record Screwed in" src="/static/photography/0-min.webp"/>
+				</a>
+			</div>
+		</div>
+	</body>
+</html>
+

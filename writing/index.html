@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Writing by Zed Kaido</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="../style.css">
+		<link rel="icon" href="/favicon.ico" />
+	</head>
+	<style>
+		.quote-block {
+			margin: 1.5em 0;
+			max-width: 444px
+		}
+		code {
+			font-size: 0.9em;
+		}
+	</style>
+	<body>
+		<div class="page">
+			<div class="header">
+				<p>笑 <a href="/">zedkaido.com</a> &gt; <a href="./">writing</a></p>
+			</div>
+			<h1>Writing</h1>
+			<p class="by">by Zed Kaido</p>
+
+			<div class="quote-block">
+				<hr>
+				<p><q id="quote"></q></p>
+				<hr>
+			</div>
+
+			<p> 
+				<code>#killed-by-google</code>
+				<br><a href="./download-discontinued-android-file-transfer-app/">
+					Download Discontinued Android File Transfer.app
+				</a>
+				<br><small><span>2025-05-07</span></small>
+			</p>
+			<p>
+				<code>#link-rot</code>
+				<br><a href="./dead-web/">Dead Web</a>
+				<br><small><span>2025-05-05</span></small>
+			</p>
+			<p>
+				<code>#focus</code> <code>#network-tools</code>
+				<br><a href="./offline/">Offline</a>
+				<br><small><span>2024-06-30</span></small> 
+			</p>
+			<p>
+				<code>#css</code> <code>#js</code>
+				<br><a href="./flicker-free-theme-switching-in-svelte-kit/">
+					Seamless/Flicker-Free Theme Switching in Svelte-kit
+				</a>
+				<br><small><span>2023-08-01</span></small>
+			</p>
+			<p> 
+				<code>#route-rules</code>
+				<br><a href="./how-to-add-www-support-to-cloudflare-pages/">
+					How to add www support to Cloudflare Pages.
+				</a>
+				<br><small><span>2023-05-23</span></small>
+			</p>
+		</div>
+		<script>
+			const quotes = [
+				"The best way to predict the future is to invent it.",
+				"Life is what happens when you're too busy making other plans.",
+				"What we think, we become.",
+				"When faced with a coding decision choose the path that makes future change easier.",
+				"Make each program do one thing well. To do a new job, build afresh rather than complicate old programs by adding new features.",
+				"It is no measure of health to be well adjusted to a profoundly sick society.",
+				"If you spend your entire life consuming information to reach a certain understanding of the world, so that you can then live life, you are missing the point.",
+				"The best time to plant a tree was 20 years ago. The second best time is now.",
+				"I write only when inspirations strikes. Fortunately it strikes every morning at nine o'clock sharp.",
+				"If you think your work is original - you are either ignorant or you are simply arogant.",
+				"A wise man will climb Fuji once, only a fool climbs it twice.",
+				"No rules are universal (except this one).",
+				"Do not rule over imaginary kingdoms of endlessly proliferating possibilities.",
+				"Do not spend your life seeking fulfilment where it cannot be found. Know thyself!",
+				"What befalls others today, may be your own fate tomorrow.",
+				"The reason to finish is so you start something new!",
+				"I would rather die living, than live dead!",
+				"Good design is as little design as possible.",
+				"All of humanities problems stem from mans inability to sit quietly in a room alone.",
+			];
+			function randomQuote() {
+				const index = Math.floor(Math.random() * quotes.length);
+				return quotes[index];
+			}
+			window.onload = () => {
+				document.getElementById("quote").textContent = randomQuote();
+			};
+		</script>
+	</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Download Discontinued Android File Transfer.app by Google
+		</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta charset="utf-8">
+		<meta name="description" content="Android File Transfer.app - How to download it and alternative ways to transfer files between android and macos">
+		<meta name="author" content="Zed Kaido">
+		<meta name="date" content="2025-05-07">
+		<link rel="stylesheet" href="/style.css">
+		<link rel="icon" href="/favicon.ico" />
+	</head>
+	<body>
+		<div class="page">
+			<div class="header">
+				<p>笑 <a href="/">zedkaido.com</a> &gt; <a href="/writing">writing</a></p>
+			</div>
+			<article>
+				<h1>
+					<a href="./">
+						Download Discontinued <code>Android File Transfer.app</code> by Google 
+					</a>
+				</h1>
+				<p>
+					Another day, another product discontinued by Google ¯\_(ツ)_/¯
+				</p>
+				<p>
+					Android File Transfer is no more. It has ceased to be. It expired and has gone to meet it's maker.
+				</p>
+				<p>
+					As it turns out, this one is actually quite useful. Not perfect, but useful. It allows you to transfer files between an Android device and a Macintosh computer. 
+				<p> 
+					Now, there are other apps that achieve the same thing and much more, but they all seem quite bloated compared to the relativelly lightweight 3.5MB app by Google.
+				</p>
+				<p>
+					Luckilly, Google hasn't taken down the download link:<br> <a href="https://dl.google.com/dl/androidjumper/mtp/current/AndroidFileTransfer.dmg">https://dl.google.com/dl/androidjumper/mtp/current/AndroidFileTransfer.dmg</a> so, download it while you can ツ.
+				</p>
+<div class="pre-header">
+sh (checksum)
+</div>
+<pre>
+λ sha256sum ~/Downloads/AndroidFileTransfer.dmg
+<b>b9249399a351e8146358ff1ddb546c68a63134b780be795ae64e0a4c2258bc61</b>
+</pre>
+
+				<p>
+				As an alternative, you can also use <code>adb</code> in the terminal: <a href="https://developer.android.com/tools/adb">https://developer.android.com/tools/adb</a>
+				</p>
+
+<div class="pre-header">
+sh (adb usage)
+</div>
+<pre>
+<span class="comment"># install</span>
+brew install android-platform-tools
+
+<span class="comment"># Ensure USB Debugging is Enabled, then run:</span>
+adb devices <span class="comment"># to lists devices, connect & authorize</span>
+
+<span class="comment"># `sdcard` is a symlink to the primary shared storage location</span>
+adb pull /sdcard/Download/file.pdf /path/to/local/destination/
+adb push /path/to/local/file.pdf /sdcard/Download/ 
+
+<span class="comment"># folders can be pulled/pushed too</span>
+adb pull /sdcard/DCIM ~/Pictures/
+</pre>
+
+				<hr>
+				<p>
+					<span class="date">2025-05-07</span><br>
+					by Zed Kaido
+				</p>
+			</article>
+		</div>
+	</body>
+</html>

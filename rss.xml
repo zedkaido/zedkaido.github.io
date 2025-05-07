@@ -1,0 +1,105 @@
+<rss version="2.0">
+	<channel>
+		<title>Zed Kaido - Feed</title>
+		<link>https://zedkaido.com</link>
+		<description>Life is a symphony. Turn up the volume! Sing out loud! Make your sound.</description>
+		<language>en-gb</language>
+	</channel>
+
+	<item>
+		<category>writing</category>
+		<title>Download Discontinued Android File Transfer.app</title>
+		<link>https://zedkaido.com/writing/download-discontinued-android-file-transfer-app/</link>
+		<guid>https://zedkaido.com/writing/download-discontinued-android-file-transfer-app/</guid>
+		<pubDate>Fri, 02 May 2025 00:00:00 +0000</pubDate>
+		<description><![CDATA[
+		<p>Android File Transfer was discontinued.</p>
+		<p>This article provides the, still available, download link and an alternative solution (adb).</p>	
+		]]></description>
+	</item>
+
+	<item>
+		<category>writing</category<
+		<title>Dead Web</title>
+		<link>https://zedkaido.com/writing/dead-web/</link>
+		<guid>https://zedkaido.com/writing/dead-web/</guid>
+		<pubDate>Mon, 05 May 2025 00:00:00 +0000</pubDate>
+		<description><![CDATA[
+		<p>On links. Dead links. And, perhaps the answer to why they are dead.</p>
+		]]></description>
+	</item>
+
+	<item>
+		<category>writing</category<
+		<title>Offline</title>
+		<link>https://zedkaido.com/writing/offline/</link>
+		<guid>https://zedkaido.com/writing/offline/</guid>
+		<pubDate>Sun, 30 Jun 2024 00:00:00 +0000</pubDate>
+		<description><![CDATA[
+		<p>WHY go offline? And HOW?</p>
+		]]></description>
+	</item>
+
+	<item>
+		<category>writing</category<
+		<title>Seamless/Flicker-Free Theme Switching in Svelte-kit</title>
+		<link>https://zedkaido.com/writing/flicker-free-theme-switching-in-svelte-kit/</link>
+		<guid>https://zedkaido.com/writing/flicker-free-theme-switching-in-svelte-kit/</guid>
+		<pubDate>Tue, 10 Aug 2023 00:00:00 +0000</pubDate>
+		<description><![CDATA[
+		<p>A practical solution to flicker-free theme switching in Svelte-kit (can be adapted to other frameworks).</p>
+		]]></description>
+	</item>
+
+	<item>
+		<category>writing</category<
+		<title>How to add www support to Cloudflare Pages.</title>
+		<link>https://zedkaido.com/writing/how-to-add-www-support-to-cloudflare-pages/</link>
+		<guid>https://zedkaido.com/writing/how-to-add-www-support-to-cloudflare-pages/</guid>
+		<pubDate>Tue, 23 May 2023 00:00:00 +0000</pubDate>
+		<description><![CDATA[
+		<p>A step-by-step guide on how to set-up www redirection using Cloudflare Page Rules.</p>
+		]]></description>
+	</item>
+
+	<item>
+		<category>music</category>
+		<title>Zorba The Greek</title>
+		<link>https://zedkaido.com/music/zorba-the-greek/</link>
+		<guid>https://zedkaido.com/music/zorba-the-greek/</guid>
+		<pubDate>Tue, 03 May 2023 00:00:00 +0000</pubDate>
+	</item>
+
+	<item>
+		<category>music</category>
+		<title>Cotton Eye Joe (Afro House Mix)</title>
+		<link>https://zedkaido.com/music/cotton-eye-joe/</link>
+		<guid>https://zedkaido.com/music/cotton-eye-joe/</guid>
+		<pubDate>Fri, 03 Mar 2023 00:00:00 +0000</pubDate>
+	</item>
+
+	<item>
+		<category>music</category>
+		<title>Can Can: Offenbach is In The House</title>
+		<link>https://zedkaido.com/music/can-can-offenbach-is-in-the-house/</link>
+		<guid>https://zedkaido.com/music/can-can-offenbach-is-in-the-house/</guid>
+		<pubDate>Fri, 24 Feb 2023 00:00:00 +0000</pubDate>
+	</item>
+
+	<item>
+		<category>music</category>
+		<title>Bach's Ghost In The Machine</title>
+		<link>https://zedkaido.com/music/bachs-ghost-in-the-machine/</link>
+		<guid>https://zedkaido.com/music/bachs-ghost-in-the-machine/</guid>
+		<pubDate>Mon, 13 Feb 2023 00:00:00 +0000</pubDate>
+	</item>
+
+	<item>
+		<category>music</category>
+		<title>Second Rendez-Vous (Redux)</title>
+		<link>https://zedkaido.com/music/second-rendez-vous-redux/</link>
+		<guid>https://zedkaido.com/music/second-rendez-vous-redux/</guid>
+		<pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate>
+	</item>
+
+</rss>
