@@ -3,6 +3,7 @@
 	src: url("static/fonts/berkeley-mono/BerkeleyMono-Regular.woff2");
 	font-weight: 400;
 	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
@@ -10,6 +11,7 @@
 	src: url("static/fonts/berkeley-mono/BerkeleyMono-Bold.woff2");
 	font-weight: 700;
 	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
@@ -17,6 +19,7 @@
 	src: url("static/fonts/berkeley-mono/BerkeleyMono-Italic.woff2");
 	font-weight: 400;
 	font-style: italic;
+	font-display: swap;
 }
 
 @font-face {
@@ -24,6 +27,7 @@
 	src: url("static/fonts/berkeley-mono/BerkeleyMono-BoldItalic.woff2");
 	font-weight: 700;
 	font-style: italic;
+	font-display: swap;
 }
 
 @media (prefers-color-scheme: light) {
