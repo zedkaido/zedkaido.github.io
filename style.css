@@ -276,10 +276,19 @@ body, input, radio, select, textarea, button {
 	font-size: 16px;
 }
 
+header {
+	line-height: 1.5em;
+	margin-bottom: 1em;
+}
+
+special {
+	background: var(--color-fg);
+}
+
 .page {
 	width: 100%;
 	max-width: var(--page-max-width);
-	padding: 0 1em 0 1em; 
+	padding: 1em; 
 }
 
 .maxwidth {
@@ -332,7 +341,7 @@ img {
 	background: var(--color-silver);
 }
 
-.hi, .highlight{
+highlight, hi {
 	background: var(--color-yellow);
 	padding: 0 0.1em;
 }

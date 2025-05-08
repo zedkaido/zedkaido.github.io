@@ -10,6 +10,11 @@
 	</head>
 	<style>
 		hr { max-width: 342px; margin-left: 0; }
+		nav { 
+			margin-bottom: 1em;
+			line-height: 1.5em;
+			text-wrap: balance;
+		}
 		.zedkaido {
 			display: flex;
 			flex-direction: row;
@@ -35,15 +40,17 @@
 	</style>
 	<body>
 		<div class="page">
-			<div class="header">
-				<p>笑 <a href="./">zedkaido.com</a></p>
-			</div>
+			<header>
+				<special>笑</special> | <a href="/">zedkaido.com</a> | <a href="/rss.xml">RSS</a>
+			</header>
 
-			<p><big><b style="line-height: 1.5em; text-wrap: balance">
-				<a rel="prerender" href="/writing">Writing</a>
-				<a href="/music">Music</a>
-				<a href="/photography">Photography</a><br>
-			</b></big><p>
+			<nav>
+				<big>
+					<a rel="prerender" href="/writing">Writing</a>
+					<a href="/music">Music</a>
+					<a href="/photography">Photography</a><br>
+				</big>
+			</nav>
 
 			<div class="zedkaido">
 				<img alt="Photo of Zed Kaido" width=180 src="/static/images/zk-360-q93.webp"/>
@@ -56,14 +63,16 @@
 				Make your sound.<br>
 			</p>
 
-			<hr><p>
-				<b>If you wish to DM me:</b><br>
-				dm [at] zedkaido [dot] com
-			</p>
-		   	<hr><p>
-				<b>If you wish to book me for a show:</b><br>
-				bookings [at] zedkaido [dot] com
-			</p><hr>
+			<footer>
+				<hr><p>
+					<b>If you wish to DM me:</b><br>
+					dm [at] zedkaido [dot] com
+				</p>
+				<hr><p>
+					<b>If you wish to book me for a show:</b><br>
+					bookings [at] zedkaido [dot] com
+				</p><hr>
+			</footer>
 		</div>
 	</body>
 </html>
