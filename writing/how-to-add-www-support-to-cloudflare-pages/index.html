@@ -24,7 +24,7 @@
 					</a>
 				</h1>
 				<p>
-					If you use cloudflare pages, and like me, tried visiting <code>www.website.com</code> only to find out that it was not available - you are in the right place. This article provides some direction on how to setup redirection of <code>www.website.com</code> to <code>website.com</code> and vice-versa using page rules. 
+					If you use cloudflare pages, and like me, tried visiting <b>www.website.com</b> only to find out that it was not available - you are in the right place. This article provides some direction on how to setup redirection of <b>www.website.com</b> to <b>website.com</b> and vice-versa using page rules. 
 				<p>
 
 				<h3>
@@ -36,8 +36,7 @@
 					</li>
 					<li>Go to: Websites &gt; website.com &gt; DNS</li>
 					<li>
-						Add a DNS record for <code>www</code> to
-						<code>website.com</code>:
+						Add a DNS record for <b>www</b> to <b>website.com</b>:
 					</li>
 					<ul>
 						<li><b>Type</b>: A</li>
@@ -46,12 +45,12 @@
 					</ul>
 					<li>Go to: Rules &gt; Create Page Rule</li>
 					<ul>
-						<li><b>URL</b>: <code>www.website.com/*</code></li>
+						<li><b>URL</b>: www.website.com/*</li>
 						<li><b>Setting</b>: Forwarding URL</li>
 						<li><b>Status Code: 302</b> - Temporary Redirect (to start with)</li>
-						<li><b>Destination URL</b>: <code>https://website.com/$1</code></li>
+						<li><b>Destination URL</b>: https://website.com/$1</li>
 					</ul>
-					<li>Voila! <code>www.website.com</code> is now accessible!</li>
+					<li>Voila! www.website.com is now accessible!</li>
 					<li>
 						If this is the desired effect you want, change the Status Code from "<b>302 - Temporary Redirect</b>" to "<b>301 - Permanent Redirect</b>"
 				   	</li>
@@ -60,7 +59,7 @@
 				<hr>
 
 				<p>
-				<b>Note</b>: The asterisk (<code>*</code>) means it will forward all pages, and the <code>$1</code> will keep the path intact: <code>www.website.com/page</code> &rarr; <code>website.com/page</code>.
+				<b>Note</b>: The asterisk <code>*</code> means it will forward all pages, and the <code>$1</code> will keep the path intact: <b>www.website.com/page</b> &rarr; <b>website.com/page</b>
 				</p>
 
 				<hr>
@@ -73,8 +72,8 @@
 					<li>
 						Open your Cloudflare Dashboard: <a href="https://dash.cloudflare.com">https://dash.cloudflare.com</a>
 					</li>
-					<li>Go to: Websites &gt; <code>website.com</code> &gt; DNS</li>
-					<li>Add a DNS record for @ to <code>website.com</code>:</li>
+					<li>Go to: Websites &gt; <b>website.com</b> &gt; DNS</li>
+					<li>Add a DNS record for @ to <b>website.com</b>:</li>
 					<ul>
 						<li><b>Type</b>: A</li>
 						<li><b>Name</b>: @</li>
@@ -82,14 +81,13 @@
 					</ul>
 					<li>Go to: Rules &gt; Create Page Rule</li>
 					<ul>
-						<li><b>URL</b>: <code>website.com/*</code></li>
+						<li><b>URL</b>: website.com/*</li>
 						<li><b>Setting</b>: Forwarding URL</li>
 						<li><b>Status Code</b>: 302 - Temporary Redirect</li>
-						<li><b>Destination URL</b>: <code>https://www.website.com/$1</code></li>
+						<li><b>Destination URL</b>: https://www.website.com/$1</li>
 					</ul>
 					<li>
-						Voila! <code>website.com</code> will redirect you to
-						<code>www.website.com</code>!
+						Voila! website.com will redirect you to www.website.com!
 					</li>
 					<li>
 						If this is the desired effect you want, change the Status Code from "302 - Temporary Redirect" to <b>"301 - Permanent Redirect"</b>
