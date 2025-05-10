@@ -57,7 +57,7 @@
 @media (prefers-color-scheme: dark) {
 	:root {
 		--color-black: #000000;
-		--color-white: #eeeeee;
+		--color-white: #d0d0d0;
 		--color-grey: #9e9e9e;
 		--color-silver: #d0d0d0; 
 		--color-blue: #000087;
@@ -68,14 +68,14 @@
 		--color-bg: var(--color-black); 
 		--color-fg: var(--color-white);
 
-		--color-code-bg: var(--color-yellow);
-		--color-code-fg: #000000; 
+		--color-code-bg: var(--color-silver);
+		--color-code-fg: var(--color-black); 
 		--color-pre-header: var(--color-white);
 		--color-pre-bg: var(--color-black);
 		--color-pre-fg: var(--color-white);
 	}
 
-	a { color: var(--color-white); text-decoration-color: #eeeeee; }
+	a { color: var(--color-white); text-decoration-color: var(--color-white); }
 	a:visited { text-decoration-color: var(--color-purple); }
 }
 
@@ -354,7 +354,8 @@ code {
 	background-color: var(--color-code-bg);
 	color: var(--color-code-fg);
 	box-sizing: border-box;	
-	padding: 0 0.1em ;
+	padding: 0 0.1em;
+	font-weight: bold;
 }
 
 .pre-header {
