@@ -41,14 +41,14 @@
 	<body>
 		<div class="page">
 			<header>
-				<special>笑</special> | <a href="/">zedkaido.com</a> | <a href="/rss.xml">RSS</a>
+				<special>笑</special> | <a class="ff" href="/">zedkaido.com</a> | <a href="/rss.xml">RSS</a>
 			</header>
 
 			<nav>
 				<big>
-					<a rel="prerender" href="/writing">Writing</a>
-					<a href="/music">Music</a>
-					<a href="/photography">Photography</a><br>
+					<a rel="prerender" class="ff" href="/writing">Writing</a>
+					<a class="ff" href="/music">Music</a>
+					<a class="ff" href="/photography">Photography</a>
 				</big>
 			</nav>
 
@@ -74,5 +74,10 @@
 				</p><hr>
 			</footer>
 		</div>
+		<script>
+			document.querySelectorAll('a.ff').forEach(a => {
+				a.addEventListener('mousedown', e => { if (e.button == 0) this.location = a.href; })
+			});
+		</script>
 	</body>
 </html>

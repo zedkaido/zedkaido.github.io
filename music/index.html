@@ -53,7 +53,7 @@
 	<body>
 		<div class="page">
 			<header>
-				<special>笑</special> | <a href="/">zedkaido.com</a> &gt; <a href="/music">music</a> | <a href="/rss.xml">RSS</a>
+				<special>笑</special> | <a class="ff" href="/">zedkaido.com</a> &gt; <a class="ff" href="/music">music</a> | <a href="/rss.xml">RSS</a>
 			</header>
 
 			<h1>Music</h1>
@@ -62,27 +62,29 @@
 			<div class="discography">
 				<div>
 					<div class="release">
-						<a class="release-cover" href="zorba-the-greek">
+						<a class="release-cover ff" href="zorba-the-greek">
 							<img alt="Track cover for Zorba The Greek"
 							     src="/static/music/zorba-the-greek/thumbnail-min.webp" />
 						</a>
 						<div>
 							<span><code>#single</code> <code>#dance</code></span>
-							<span><a href="zorba-the-greek">Zorba the Greek</a><br></span>
+							<span>
+								<a class="ff" href="zorba-the-greek">Zorba the Greek</a>
+							</span>
 							<span><small>2023-05-23</small></span>
 						</div>
 					</div>
 				</div>
 				<div>
 					<div class="release">
-						<a class="release-cover" href="cotton-eye-joe">
+						<a class="release-cover ff" href="cotton-eye-joe">
 							<img alt="Track cover for Cotton Eye Joe"
 							     src="/static/music/cotton-eye-joe/thumbnail-min.webp" />
 						</a>
 						<div>
 							<span><code>#single</code> <code>#afro-house</code></span>
 							<span>
-								<a href="cotton-eye-joe">Cotton Eye Joe<br><small>(Afro House Mix)</small></a>
+								<a class="ff" href="cotton-eye-joe">Cotton Eye Joe<br><small>(Afro House Mix)</small></a>
 							</span>
 							<span><small>2023-03-17</small></span>
 						</div>
@@ -90,14 +92,16 @@
 				</div>
 				<div>
 					<div class="release">
-						<a class="release-cover" href="can-can-offenbach-is-in-the-house">
+						<a class="release-cover ff" href="can-can-offenbach-is-in-the-house" >
 							<img alt="Track cover for Can Can: Offenbach is In The House"
 							     src="/static/music/can-can-offenbach-is-in-the-house/thumbnail-min.webp" />
 						</a>
 						<div>
 							<span><code>#single</code> <code>#house</code></span>
 							<span>
-								<a href="can-can-offenbach-is-in-the-house">Can Can: Offenbach is in The House</a>
+								<a class="ff" href="can-can-offenbach-is-in-the-house">
+									Can Can: Offenbach is in The House
+								</a>
 							</span>
 							<span><small>2023-02-24</small></span>
 						</div>
@@ -105,14 +109,14 @@
 				</div>
 				<div>
 					<div class="release">
-						<a class="release-cover" href="bachs-ghost-in-the-machine">
+						<a class="release-cover ff" href="bachs-ghost-in-the-machine">
 							<img alt="Track cover for Bach's Ghost in The Machine"
 							     src="/static/music/bachs-ghost-in-the-machine/thumbnail-min.webp" />
 						</a>
 						<div>
 							<span><code>#single</code> <code>#synthwave</code></span>
 							<span>
-								<a href="bachs-ghost-in-the-machine">Bach's Ghost In<br> The Machine</a>
+								<a class="ff" href="bachs-ghost-in-the-machine">Bach's Ghost In<br> The Machine</a>
 							</span>
 							<span><small>2023-02-13</small></span>
 						</div>
@@ -120,14 +124,14 @@
 				</div>
 				<div>
 					<div class="release">
-						<a class="release-cover" href="second-rendez-vous-redux">
+						<a class="release-cover ff" href="second-rendez-vous-redux">
 							<img alt="Track cover for Second Rendez-Vous (Redux)"
 							     src="/static/music/second-rendez-vous-redux/thumbnail-min.webp" />
 						</a>
 						<div>
 							<span><code>#single</code> <code>#synthwave</code></span>
 							<span>
-								<a href="second-rendez-vous-redux">Second Rendez-Vous <small>(Redux)</small></a>
+								<a class="ff" href="second-rendez-vous-redux">Second Rendez-Vous <small>(Redux)</small></a>
 							</span>
 							<span><small>2023-01-23</small></span>
 						</div>
@@ -135,5 +139,10 @@
 				</div>
 			</div>
 		</div>
+		<script>
+			document.querySelectorAll('a.ff').forEach(a => {
+				a.addEventListener('mousedown', e => { if (e.button == 0) this.location = a.href; })
+			});
+		</script>
 	</body>
 </html>

@@ -19,7 +19,7 @@
 	<body>
 		<div class="page">
 			<header>
-				<special>笑</special> | <a href="/">zedkaido.com</a> &gt; <a href="/writing">writing</a> | <a href="/rss.xml">RSS</a>
+				<special>笑</special> | <a class="ff" href="/">zedkaido.com</a> &gt; <a class="ff" href="/writing">writing</a> | <a href="/rss.xml">RSS</a>
 			</header>
 			<h1>Writing</h1>
 			<p class="by">by Zed Kaido</p>
@@ -32,31 +32,35 @@
 
 			<p> 
 				<code>#killed-by-google</code>
-				<br><a href="./download-discontinued-android-file-transfer-app/">
+				<br><a class="ff" href="./download-discontinued-android-file-transfer-app/">
 					Download Discontinued Android File Transfer.app
 				</a>
 				<br><small><span>2025-05-07</span></small>
 			</p>
 			<p>
 				<code>#link-rot</code>
-				<br><a href="./dead-web/">Dead Web</a>
+				<br><a class="ff" href="./dead-web/">
+					Dead Web
+				</a>
 				<br><small><span>2025-05-05</span></small>
 			</p>
 			<p>
 				<code>#focus</code> <code>#network-tools</code>
-				<br><a href="./offline/">Offline</a>
+				<br><a class="ff" href="./offline/">
+					Offline
+				</a>
 				<br><small><span>2024-06-30</span></small> 
 			</p>
 			<p>
 				<code>#css</code> <code>#js</code>
-				<br><a href="./flicker-free-theme-switching-in-svelte-kit/">
+				<br><a class="ff" href="./flicker-free-theme-switching-in-svelte-kit/">
 					Seamless/Flicker-Free Theme Switching in Svelte-kit
 				</a>
 				<br><small><span>2023-08-01</span></small>
 			</p>
 			<p> 
 				<code>#route-rules</code>
-				<br><a href="./how-to-add-www-support-to-cloudflare-pages/">
+				<br><a class="ff" href="./how-to-add-www-support-to-cloudflare-pages/">
 					How to add www support to Cloudflare Pages.
 				</a>
 				<br><small><span>2023-05-23</span></small>
@@ -92,6 +96,11 @@
 			window.onload = () => {
 				document.getElementById("quote").textContent = randomQuote();
 			};
+		</script>
+		<script>
+			document.querySelectorAll('a.ff').forEach(a => {
+				a.addEventListener('mousedown', e => { if (e.button == 0) this.location = a.href; })
+			});
 		</script>
 	</body>
 </html>

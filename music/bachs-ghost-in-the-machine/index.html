@@ -11,7 +11,7 @@
 	<body>
 		<div class="page">
 			<header>
-				<special>笑</special> | <a href="/">zedkaido.com</a> &gt; <a href="/music">music</a> | <a href="/rss.xml">RSS</a>
+				<special>笑</special> | <a class="ff" href="/">zedkaido.com</a> &gt; <a class="ff" href="/music">music</a> | <a href="/rss.xml">RSS</a>
 			</header>
 			<div class="track-player">
 				<div class="tp-cover">
@@ -82,5 +82,10 @@
 			</div>
 		</div>
 		<script type="module" src="/static/js/track-player.js"></script>
+		<script>
+			document.querySelectorAll('a.ff').forEach(a => {
+				a.addEventListener('mousedown', e => { if (e.button == 0) this.location = a.href; })
+			});
+		</script>
 	</body>
 </html>

@@ -15,7 +15,7 @@
 	<body>
 		<div class="page">
 			<header>
-				<special>笑</special> | <a href="/">zedkaido.com</a> &gt; <a href="/writing">writing</a> | <a href="/rss.xml">RSS</a>
+				<special>笑</special> | <a class="ff" href="/">zedkaido.com</a> &gt; <a class="ff" href="/writing">writing</a> | <a href="/rss.xml">RSS</a>
 			</header>
 			<article>
 				<h1>
@@ -74,5 +74,10 @@ adb pull /sdcard/DCIM ~/Pictures/
 				</p>
 			</article>
 		</div>
+		<script>
+			document.querySelectorAll('a.ff').forEach(a => {
+				a.addEventListener('mousedown', e => { if (e.button == 0) this.location = a.href; })
+			});
+		</script>
 	</body>
 </html>
