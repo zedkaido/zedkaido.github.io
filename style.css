@@ -388,6 +388,10 @@ pre .comment {
 	color: var(--color-grey);
 }
 
+pre comment {
+	color: var(--color-grey);
+}
+
 textarea {
 	padding: 0.4em 0.4em;
 }

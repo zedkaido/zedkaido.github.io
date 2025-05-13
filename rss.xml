@@ -8,10 +8,21 @@
 
 	<item>
 		<category>writing</category>
+		<title>Firefox Without a TAB Bar</title>
+		<link>https://zedkaido.com/writing/firefox-without-a-tab-bar/</link>
+		<guid>https://zedkaido.com/writing/firefox-without-a-tab-bar/</guid>
+		<pubDate>Fri, 13 May 2025 00:00:00 +0000</pubDate>
+		<description><![CDATA[
+		<p>This article provides the WHY and HOW to use Firefox without a TAB Bar.</p>	
+		]]></description>
+	</item>
+
+	<item>
+		<category>writing</category>
 		<title>Download Discontinued Android File Transfer.app</title>
 		<link>https://zedkaido.com/writing/download-discontinued-android-file-transfer-app/</link>
 		<guid>https://zedkaido.com/writing/download-discontinued-android-file-transfer-app/</guid>
-		<pubDate>Fri, 02 May 2025 00:00:00 +0000</pubDate>
+		<pubDate>Fri, 07 May 2025 00:00:00 +0000</pubDate>
 		<description><![CDATA[
 		<p>Android File Transfer was discontinued.</p>
 		<p>This article provides the, still available, download link and an alternative solution (adb).</p>	

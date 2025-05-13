@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>https://zedkaido.com</loc>
+		<loc>https://zedkaido.com/</loc>
 		<lastmod>2025-05-08</lastmod>
 	</url>
 
 	<url>
-		<loc>https://zedkaido.com/music</loc>
+		<loc>https://zedkaido.com/music/</loc>
 		<lastmod>2025-05-08</lastmod>
 	</url>
 
@@ -32,8 +32,12 @@
 	</url>
 
 	<url>
-		<loc>https://zedkaido.com/writing</loc>
-		<lastmod>2025-05-08</lastmod>
+		<loc>https://zedkaido.com/writing/</loc>
+		<lastmod>2025-05-13</lastmod>
+	</url>
+	<url>
+		<loc>https://zedkaido.com/writing/firefox-without-a-tab-bar/</loc>
+		<lastmod>2025-05-13</lastmod>
 	</url>
 	<url>
 		<loc>https://zedkaido.com/writing/download-discontinued-android-file-transfer-app/</loc>
@@ -61,7 +65,7 @@
 	</url>
 
 	<url>
-		<loc>https://zedkaido.com/photography</loc>
+		<loc>https://zedkaido.com/photography/</loc>
 		<lastmod>2025-05-08</lastmod>
 	</url>
 </urlset>

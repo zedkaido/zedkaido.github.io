@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>
+			Firefox Without a TAB Bar - Zed Kaido	
+		</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta charset="utf-8">
+		<meta name="author" content="Zed Kaido">
+		<meta name="date" content="2024-05-13">
+		<link rel="stylesheet" href="/style.css">
+		<link rel="icon" href="/favicon.ico" />
+	</head>
+	<body>
+		<div class="page">
+			<header>
+				<special>笑</special> | <a class="ff" href="/">zedkaido.com</a> &gt; <a class="ff" href="/writing">writing</a> | <a href="/rss.xml">RSS</a>
+			</header>
+			<article>
+				<h1>
+					<a href="./">
+						Firefox Without a TAB Bar 
+					</a>
+				</h1>
+				<p>
+				<b>Requirements</b>: <a href="https://www.mozilla.org/firefox">Firefox</a>, <a href="https://librewolf.net/">Librewolf</a>, <a href="https://thorium.rocks/mercury">Mercury</a> (or any other major fork)
+				</p>
+
+				<p>
+				<b>Soft Requirements</b>: <a href="https://addons.mozilla.org/en-US/firefox/addon/vimium-ff/">Vimium (Firefox)</a> / <a href="https://chromewebstore.google.com/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb">Vimium (Chrome)</a>
+				</p>
+
+				<p>
+				Having control over your browser is crucial to your productivity.
+				</p>	
+
+				<p>
+				We've all been there: hundreds of TABS open, trying to find our way in a sea of duplicate tabs, each 5px long, barelly distinguishable favicons are your only point of reference. A nightmare!
+				</p>
+
+				<p>
+				I have especially observed this kind of usage pattern in rookie users. And then they complain about a slow computer. Of course it's slow! Your Chrome app alone has a Gazillion GBs of RAM allocated.
+				</p>
+
+				<h3>
+					I blame the TAB Bar.
+				</h3>
+
+				<p>
+				First of all, even in its default state of 1 tab open: you can barelly read the full title of a tab. So not only do you not know what's where, but you have a backlog of hundreds of barelly known pages - all screaming at you: <q>Read ME next! Watch ME next!</q>. Afraid of missing out, you give in to the temptation of keeping them open.
+				</p>
+
+				<h3>
+					Your Focus is Scarce.
+				</h3>
+
+				<p>
+				My solution is to get rid of the TAB bar.
+				</p>
+
+				<p>
+				Only keep EXACTLY what you need open. 
+				If you are confident you'll need to revisit a page in the near future, save it in your note-taking system, or bookmark it if you so prefer.
+				</p>
+
+				<p>
+				With vimium's extension: <code>&lt;Shift-t&gt;</code> brings a tab searcher/switcher with <b>FULL</b> tab names. Same in chrome's vimium. Same in qutebrowser.
+				</p>
+
+				<p>
+				Recently Chrome has introduced a similar feature: <code>&lt;CMD+Shift-A&gt;</code>, yet you still can't read the full length tab titles. So you, sort of, have to guess your way around with keywords. I don't concur.
+				</p>
+
+				<p>
+				In Firefox you can type <code>%</code> and hit <code>&lt;TAB&gt;</code> in the search bar to get a similar kind of TAB switcher, but that's nowhere as efficient as a keyboard shortcut.
+				</p>
+
+				<p>
+				Chances are, you don't need to hide your tab bar. You can simply use the aforementioned tab switching methods. But, if you are brave enough to take the leap, you will train your memory and develop your focus. Most importantly, you will rule over your browser experience.
+				</p>
+
+				<h2>
+					Hiding the TAB Bar in Firefox
+				</h2>
+
+				<p>
+				First you've got to enable the <b>User Style Sheets</b>.
+				</p>
+
+				<p>
+				If you are old enough to remember, pre Firefox v69: you were able to load a <b>userChrome.css</b> or <b>userContent.css</b> style-sheet on start-up to customize the look of almost anything you could think of. Luckily, as of 2025, you can re-enable it:
+				</p>
+
+				<p>
+				Go to <a href="about:config">about:config</a> and set:
+				</p>
+			   
+				<p>
+				<code>toolkit.legacyUserProfileCustomizations.stylesheets</code> to <code>true</code>.
+				</p>
+
+				<p>
+				Then, in your <a href="https://support.mozilla.org/en-US/kb/profile-manager-create-remove-switch-firefox-profiles">Firefox Profile Directory</a></b> create a dir called <code>chrome</code>.
+				</p>
+				
+				<p>
+				Inside it create a file called <code>userChrome.css</code>
+				</p>
+
+<div class="pre-header">
+	~/Library/Application Support/librewolf/Profiles/your-profile/chrome/userChrome.css
+</div>
+<pre>
+#tabbrowser-tabs {
+	visibility: collapse !important;
+}
+
+#TabsToolbar {
+	visibility: collapse !important;
+}
+
+.private-browsing-indicator {
+	background-image: none !important;
+}
+
+<comment>/* (OPTIONAL) IF YOU ARE FEELING FUNKY */</comment>
+#tabbrowser-tabs, #navigator-toolbox, menuitem, menu {
+	font-family: monospace !important;
+	font-size: 12px !important;
+}
+</pre>
+
+				<p>
+				Another handy thing you might want to change in <a href="about:config">about:config</a>:
+				</p>
+				<p>
+				Set <code>browser.tabs.closeWindowWithLastTab</code> to <code>false</code>. That way if you reach the last tab, the window won't automatically close on you.
+				</p>
+
+				<p>
+				That's it. Restart your browser and welcome yourself to the new uncluttered browser experience.
+				</p>
+
+				<img loading="lazy"
+				     width="100%"
+				     style="border: 1px solid var(--color-fg);"
+				     src="https://images.zedkaido.com/writing/firefox-without-a-tab-bar/librewolf.webp" />
+				
+				<p>
+				And, if you want to go above and beyond, try <a href="https://qutebrowser.org/">qutebrowser</a> or <a href="https://nyxt.atlas.engineer/">nyxt</a>.
+				</p>
+
+				<img loading="lazy"
+				     width="100%"
+				     style="border: 1px solid var(--color-fg);"
+				     src="https://images.zedkaido.com/writing/firefox-without-a-tab-bar/qutebrowser.webp" />
+
+				<p>
+				Happy Browsing!
+				</p>
+
+				<hr>
+				<footer>
+					<p>
+						<span class="date">2025-05-13</span><br>
+						by Zed Kaido
+					</p>
+				</footer>
+			</article>
+		</div>
+		<script>
+			document.querySelectorAll('a.ff').forEach(a => {
+				a.addEventListener('mousedown', e => { if (e.button == 0) this.location = a.href; })
+			});
+		</script>
+	</body>
+</html>
