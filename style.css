@@ -48,6 +48,9 @@
 		--color-pre-header: var(--color-white);
 		--color-pre-bg: var(--color-white);
 		--color-pre-fg: var(--color-black);
+
+		--color-opus-humanum-fg: var(--color-fg);
+		--color-opus-humanum-bg: var(--color-bg);
 	}
 
 	a { color: var(--color-black); }
@@ -73,6 +76,9 @@
 		--color-pre-header: var(--color-white);
 		--color-pre-bg: var(--color-black);
 		--color-pre-fg: var(--color-white);
+
+		--color-opus-humanum-fg: var(--color-fg);
+		--color-opus-humanum-bg: var(--color-bg);
 	}
 
 	a { color: var(--color-white); text-decoration-color: var(--color-white); }
@@ -388,4 +394,20 @@ textarea {
 
 .quote-block { 
 	margin: 1.5em 0; 
+}
+
+vertical {
+	writing-mode: vertical-rl;
+}
+
+opus-humanum {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	background: var(--color-opus-humanum-bg);
+	color: var(--color-opus-humanum-fg);
+	font-size: 0.2em;
+	margin: 24px 0;
 }
