@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>
+			Ditch Your ISPs DNS Resolver	
+		</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta charset="utf-8">
+		<meta name="author" content="Zed Kaido">
+		<meta name="date" content="2025-05-14">
+		<link rel="stylesheet" href="/style.css">
+		<link rel="icon" href="/favicon.ico" />
+	</head>
+	<body>
+		<div class="page">
+			<header>
+				<special>笑</special> | <a class="ff" href="/">zedkaido.com</a> &gt; <a class="ff" href="/writing">writing</a> | <a href="/rss.xml">RSS</a>
+			</header>
+			<article>
+				<h1>
+					<a href="./">
+						Ditch Your ISPs DNS Resolver	
+					</a>
+				</h1>
+
+				<p>
+				Virtually everything on the web starts with a DNS request.
+				</p>
+
+				<p>
+				Depending on your local network or device's settings, DNS requests are sent to a select DNS Resolver (<b><q>The Internet's Phone Book</q></b>). Every time you visit a website, send an email, access an app, upload a file, your device communicates with a DNS Resolver in order to translate the address of the website  <a href="https://zedkaido.com"><code>https://one.one.one.one</code></a> into a machine readable IP address <a href="https://1.1.1.1"><code>1.1.1.1</code></a> (generally these are cached on your browser/device). 
+				</p>
+
+				<p>
+				ISPs are often the de facto standard DNS Resolvers for most devices on most networks. These, in turn, are under regulatory and governmental control of the countries they provide service in.
+				</p>
+				
+				<h3>
+				Do you trust your government with your internet traffic? 
+				</h3>
+
+				<p>
+				It is not about what you are doing being legal or not. It is about the invasion of Privacy and the open door for mass surveillance, and in turn, mass control. Even if the content is encrypted, ISPs and anyone listening to your internet usage can tune into every site you visit and every app you use. Many DNS providers sell your internet's activity to companies interested in targetting you with ads. Many log IP addresses alongside traffic. Are you ok with that?
+				</p>
+
+				<p>
+				Ever wondered how your country can simply reroute the website you're trying to visit to their own scary-looking page to keep you from accessing it?
+				</p>
+				<p>
+				The most common website censorship technique used by ISPs is DNS tampering. You see, Internet Service Providers have the power to override <q>The Phone Book</q>'s entries. They can do that by resolving DNS requests to a said <code>website.com</code> into false or empty DNS responses (NXDOMAIN).
+				</p>
+
+				<p>
+				Many countries attempt going a step further by blocking IP addresses, but that can often result in massive <a href="https://blog.cloudflare.com/consequences-of-ip-blocking/">unintended consequences</a>. That is because most websites today share IP addresses, and not on a small scale <q><cite><a href="https://blog.cloudflare.com/consequences-of-ip-blocking/#the-proof-is-in-the-pudding-names">10,000 IPs are enough to reach 80%, or about 204 million, domains</a></cite></q>. So if a government orders an ISP to block an IP address for a said website, it might end-up blocking thousands of others and stop millions of people from accessing regular websites that have nothing to do with the intended block.
+				</p>
+
+				<p>
+				A reliable way to bypass an IP Address block is by using a VPN. But if your country is not that strict about internet censorship, you might be able to bypass DNS shenanigans by simply updating your default DNS Server on your network/device.
+				</p>
+
+				<p>
+				One of the best DNS Resolvers out there is Cloudflare's <a href="https://one.one.one.one">1.1.1.1</a>
+				</p>
+				<li>It is REALLY fast.</li>
+				<li>It does not sell your data.</li>
+				<li>It has a strong commitment to your privacy.</li>
+				<li>And, it is really easy to set-up.</li>
+
+				<h2 id="setting-up-cloudflare-dns-on-your-device">
+					Setting up 1.1.1.1 on Your Device/Network
+				</h2>
+
+				<p>
+				If you don't really want to dive into your device/network settings you can simply <a href="https://one.one.one.one/">Download WARP</a> and turn it on. Easy as that.
+				</p>
+
+				<p>
+				If, however you would like to change your device's settings it's as simple as updating your DNS Servers to:
+				</p>
+				<li><code>1.1.1.1</code> (IPv4)</li>
+				<li><code>1.0.0.1</code> (IPv4)</li>
+				<li><code>2606:4700:4700::1111</code> (IPv6)</li>
+				<li><code>2606:4700:4700::1001</code> (IPv6)</li>
+
+
+				<p>
+				You can find <a href="https://developers.cloudflare.com/1.1.1.1/setup/">Cloudflare's Instructions</a> on how to set-it up on any platform - even on your fridge ^_-
+				</p>
+
+				<p>
+				Happy browsing!
+				</p>
+
+				<hr>
+				<p>
+					<span class="date">2025-05-14</span><br>
+					by Zed Kaido
+				</p>
+			</article>
+		</div>
+		<script>
+			document.querySelectorAll('a.ff').forEach(a => {
+				a.addEventListener('mousedown', e => { if (e.button == 0) this.location = a.href; })
+			});
+		</script>
+	</body>
+</html>

@@ -8,6 +8,17 @@
 
 	<item>
 		<category>writing</category>
+		<title>Ditch your ISPs DNS Resolver</title>
+		<link>https://zedkaido.com/writing/ditch-your-isps-dns-resolver/</link>
+		<guid>https://zedkaido.com/writing/ditch-your-isps-dns-resolver/</guid>
+		<pubDate>Fri, 14 May 2025 00:00:00 +0000</pubDate>
+		<description><![CDATA[
+		<p>Why switch your DNS Resolver to 1.1.1.1</p>	
+		]]></description>
+	</item>
+
+	<item>
+		<category>writing</category>
 		<title>Firefox Without a TAB Bar</title>
 		<link>https://zedkaido.com/writing/firefox-without-a-tab-bar/</link>
 		<guid>https://zedkaido.com/writing/firefox-without-a-tab-bar/</guid>
