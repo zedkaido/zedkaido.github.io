@@ -118,7 +118,7 @@ code::selection { color: var(--color-yellow); background: var(--color-blue); }
 }
 
 html {
-	line-height: 1.15;
+	line-height: 1.31;
 	-webkit-text-size-adjust: 100%; /* keep font size after orientation change in iOS */
 }
 
@@ -147,7 +147,7 @@ figure {
 	margin: 0;
 }
 
-h1,h2,h3,h4,h5,h6,p,a,pre {
+h1,h2,h3,h4,h5,h6,p,a,pre, li {
 	vertical-align: baseline;
 }
 
@@ -312,7 +312,7 @@ special {
 }
 
 .page .by {
-	margin-top: -1.5em;
+	margin-top: -1.69em;
 }
 
 .font-button {
@@ -357,7 +357,7 @@ highlight, hi {
 }
 
 code {
-	background-color: var(--color-code-bg);
+	background: var(--color-code-bg);
 	color: var(--color-code-fg);
 	box-sizing: border-box;	
 	padding: 0 0.1em;
