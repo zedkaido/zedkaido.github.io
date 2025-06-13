@@ -118,7 +118,7 @@ code::selection { color: var(--color-yellow); background: var(--color-blue); }
 }
 
 html {
-	line-height: 1.31;
+	line-height: 1.28;
 	-webkit-text-size-adjust: 100%; /* keep font size after orientation change in iOS */
 }
 
