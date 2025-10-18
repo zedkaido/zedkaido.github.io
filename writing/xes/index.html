@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>
+			XES - X Engine Selector	
+		</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta charset="utf-8">
+		<meta name="author" content="Zed Kaido">
+		<meta name="date" content="2025-05-14">
+		<link rel="stylesheet" href="/style.css">
+		<link rel="icon" href="/favicon.ico" />
+	</head>
+	<body>
+		<div class="page">
+			<header>
+				<special>笑</special> | <a class="ff" href="/">zedkaido.com</a> &gt; <a class="ff" href="/writing">writing</a> | <a href="/rss.xml">RSS</a>
+			</header>
+			<article>
+				<h1>
+					<a href="https://xes.zedkaido.com" target="_blank">XES</a> (X Engine Selector)
+				</h1>
+
+				<p>
+				Why would you use duck duck go <code>!bangs</code> when you can have a faster, local, private, open-source, configurable solution.
+				</p>
+				<p>
+				That's the idea behind <b>XES</b> aka. X Engine Selector.
+				</p>
+
+				<p>
+				If you've been living under a rock, <code>!bangs</code> are shortcuts to other search engines.
+				For example, you can quickly search wikipedia with <code>!wiki Hutter Prize</code>, Google with <code>!g do a barrell role</code>, or YouTube with <code>Google IO 2025 !yt</code>.
+				</p>
+
+				<p>
+				If you are happy with <a href="https://xes.zedkaido.com/" target="_blank">xes.zedkaido.com</a> bangs, just set <code>https://xes.zedkaido.com/?q=%s</code> as your default search engine.
+				</p>
+
+				<p>
+				XES's JS is cached locally, so redirects are done in your browser. 
+				</p>
+
+				<p>
+				Otherwise, you can clone <a href="https://github.com/zedkaido/xes" target="_blank">github.com/zedkaido/xes</a> and edit <code>src/bangs.js</code> bangs to your liking. It's quite easy.
+				</p>
+
+<div class="pre-header">
+	src/bangs.js
+</div>
+<pre>
+export const bangs = {
+	"g": {
+		name: "Google Search",
+		url: "https://www.google.com/search?q={{{s}}}"
+	},
+	<comment>// ...</comment>
+}
+</pre>
+
+				<hr>
+				<p>
+					<span class="date">2025-05-14</span><br>
+					by Zed Kaido
+				</p>
+			</article>
+		</div>
+		<script>
+			document.querySelectorAll('a.ff').forEach(a => {
+				a.addEventListener('mousedown', e => { if (e.button == 0) this.location = a.href; })
+			});
+		</script>
+	</body>
+</html>
+
