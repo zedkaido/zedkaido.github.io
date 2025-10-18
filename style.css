@@ -405,13 +405,8 @@ vertical {
 }
 
 opus-humanum {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	width: 100%;
-	background: var(--color-opus-humanum-bg);
-	color: var(--color-opus-humanum-fg);
-	font-size: 0.2em;
-	margin: 24px 0;
+	background: var(--color-fg);
+	color: var(--color-bg);
+	padding: 1em 1.3em;
+	font-size: 1em;
 }
