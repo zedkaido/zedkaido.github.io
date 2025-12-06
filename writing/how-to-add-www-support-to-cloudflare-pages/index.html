@@ -13,16 +13,22 @@
 		<link rel="icon" href="/favicon.ico" />
 	</head>
 	<body>
-		<div class="page">
+		<div class="page page-writing">
 			<header>
 				<special>笑</special> | <a class="ff" href="/">zedkaido.com</a> &gt; <a class="ff" href="/writing">writing</a> | <a href="/rss.xml">RSS</a>
 			</header>
 			<article>
+				<div class="creds">
+					<b>2023-05-23</b>
+				</div>
+				<div class="creds">
+					Written by <b>Zed Kaido</b>
+				</div>
+
 				<h1>
-					<a href="./">
-						How to Add www Support to Cloudflare Pages
-					</a>
+					How to Add <i>www</i> Support to<br>Cloudflare Pages
 				</h1>
+
 				<p>
 					If you use cloudflare pages, and like me, tried visiting <b>www.website.com</b> only to find out that it was not available - you are in the right place. This article provides some direction on how to setup redirection of <b>www.website.com</b> to <b>website.com</b> and vice-versa using page rules. 
 				<p>
@@ -93,13 +99,9 @@
 						If this is the desired effect you want, change the Status Code from "302 - Temporary Redirect" to <b>"301 - Permanent Redirect"</b>
 					</li>
 				</ol>
-
-				<hr>
-				<p>
-					<span class="date">2023-05-23</span><br>
-					by Zed Kaido
-				</p>
 			</article>
+
+			<opus-humanum>OPUS HUMANUM</opus-humanum>
 		</div>
 		<script>
 			document.querySelectorAll('a.ff').forEach(a => {

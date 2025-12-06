@@ -11,108 +11,129 @@
 	<style>
 		.photogrid {
 			display: grid;
-			grid-template-columns: 1fr 1fr;
+			grid-template-columns: 1fr; 
 			gap: 1em;
 			width: 100%;
-			padding-bottom: 1em;
+			margin-bottom: 0.5em;
+		}
+		.photogrid a {
+			text-decoration: none;
 		}
 		.photo {
+			max-width: 800px;
+			max-height: 800px;
 			width: 100%;
-			height: auto;
+			height: 100%;
 		}
-		@media (max-width: 800px) {
-			.photogrid { grid-template-columns: 1fr; }
+		.quote-block {
+			max-width: 800px;
+			display: inline-block;
+			margin: 0;
+			margin-bottom: 1em;
 		}
 	</style>
 	<body>
 		<div class="page maxwidth">
 			<header>
-				<special>笑</special> | <a href="/">zedkaido.com</a> &gt; <a href="./">photography</a>
+				<special>笑</special> | <a href="/">zedkaido.com</a> &gt; <a href="./">photography</a> | <a href="/rss.xml">RSS</a>
 			</header>
 
 			<h1>Photography</h1>
 			<p class="by">by Zed Kaido</p>
 				
-			<div class="quote-block" style="max-width: 380px;">
-				<hr><p><q>A picture is worth a thousand words.</q></p><hr>
+			<div class="quote-block">
+				<hr><p><q>The beauty of photography is the opportunity to pause time and space, archiving the whole moment into a single still.</q></p><hr>
 			</div>
 
 			<div class="photogrid">
-				<a href="/static/photography/9.webp" target="_blank">
-					<img loading="eager"
-					     fetchpriority="high"
-					     id="9"
-					     class="photo"
-					     alt="Dark on White Typogrpahy"
-					     src="/static/photography/9-min.webp" />
+				<a href="https://photography.zedkaido.com/2025-12-01.webp" target="_blank">
+					<img loading="eager" fetchpriority="high"
+					     id="2025-12-01" class="photo"
+					     alt="The suspense of a Mac which mysteriously awaits bytes through sailing ships traveling guided by the keyboard's cable."
+					     src="https://photography.zedkaido.com/min/2025-12-01.webp" />
 				</a>
-				<a href="/static/photography/8.webp" target="_blank">
-					<img loading="eager"
-					     fetchpriority="high"
-					     id="8" class="photo"
+				<a href="https://photography.zedkaido.com/2025-11-11.webp" target="_blank">
+					<img loading="lazy" fetchpriority="high"
+						 id="2025-11-11" class="photo"
+					     alt="The light of possibility."
+					     src="https://photography.zedkaido.com/min/2025-11-11.webp" />
+				</a>
+				<a href="https://photography.zedkaido.com/2025-10-11.webp" target="_blank">
+					<img loading="lazy" fetchpriority="low"
+						 id="2025-10-11" class="photo"
+					     alt="PL-30 125 HT"
+					     src="https://photography.zedkaido.com/min/2025-10-11.webp" />
+				</a>
+				<a href="https://photography.zedkaido.com/2025-10-10.webp" target="_blank">
+					<img loading="lazy" fetchpriority="low"
+					     id="2025-10-10" class="photo"
+					     alt="The brutal reality of life."
+					     src="https://photography.zedkaido.com/min/2025-10-10.webp" />
+				</a>
+				<a href="https://photography.zedkaido.com/2025-09-12.webp" target="_blank">
+					<img loading="lazy" fetchpriority="low"
+					     id="2025-09-12" class="photo"
+					     alt="Oh moon, my moon."
+					     src="https://photography.zedkaido.com/min/2025-09-12.webp" />
+				</a>
+				<a href="https://photography.zedkaido.com/2025-08-04.webp" target="_blank">
+					<img loading="lazy" fetchpriority="low"
+					     id="2025-08-04" class="photo"
+					     alt="The radiation of a lamp in Lisbon's commerce square."
+					     src="https://photography.zedkaido.com/min/2025-08-04.webp" />
+				</a>
+				<a href="https://photography.zedkaido.com/2025-01-21.webp" target="_blank">
+					<img loading="lazy" fetchpriority="low"
+					     id="2025-01-21" class="photo"
 					     alt="Circle in the dark, what is it?"
-					     src="/static/photography/8-min.webp"/>
+					     src="https://photography.zedkaido.com/min/2025-01-21.webp"/>
 				</a>
-				<a href="/static/photography/7.webp" target="_blank">
-					<img loading="lazy"
-					     fetchpriority="high"
-					     id="7" class="photo"
-					     alt="Eyes wide open. Suspense. Fear."
-					     src="/static/photography/7-min.webp"/>
+				<a href="https://photography.zedkaido.com/min/2024-12-24.webp" target="_blank">
+					<img loading="lazy" fetchpriority="low"
+					     id="2024-12-24" class="photo"
+					     alt="Eyes wide open."
+					     src="https://photography.zedkaido.com/min/2024-12-24.webp"/>
 				</a>
-				<a href="/static/photography/6.webp" target="_blank">
-					<img loading="lazy"
-					     fetchpriority="high"
-					     id="6" class="photo"
-					     alt="Light, Energy"
-					     src="/static/photography/6-min.webp"/>
-				</a>
-				<a href="/static/photography/5.webp" target="_blank">
-					<img loading="lazy"
-					     fetchpriority="low"
-					     id="5" class="photo"
+				<a href="https://photography.zedkaido.com/2024-04-24.webp" target="_blank">
+					<img loading="lazy" fetchpriority="low"
+					     id="2024-04-24" class="photo"
 					     alt="White Flare in the Dark"
-					     src="/static/photography/5-min.webp"/>
+					     src="https://photography.zedkaido.com/min/2024-04-24.webp"/>
 				</a>
-				<a href="/static/photography/4.webp" target="_blank">
-					<img loading="lazy"
-					     fetchpriority="low"
-					     id="4" class="photo"
-					     alt="Sing out Loud"
-					     src="/static/photography/4-min.webp"/>
+				<a href="https://photography.zedkaido.com/2022-02-02(4).webp" target="_blank">
+					<img loading="lazy" fetchpriority="low"
+					     id="2022-02-02(4)" class="photo"
+					     alt="Zed Kaido photo (surprised expression)"
+					     src="https://photography.zedkaido.com/min/2022-02-02(4).webp"/>
 				</a>
-				<a href="/static/photography/3.webp" target="_blank">
-					<img loading="lazy"
-					     fetchpriority="low"
-					     id="3" class="photo"
+				<a href="https://photography.zedkaido.com/2022-02-02(3).webp" target="_blank">
+					<img loading="lazy" fetchpriority="low"
+					     id="2022-02-02(3)" class="photo"
+					     alt="Zed Kaido photo (singing out loud)"
+					     src="https://photography.zedkaido.com/min/2022-02-02(3).webp"/>
+				</a>
+				<a href="https://photography.zedkaido.com/2022-02-02(2).webp" target="_blank">
+					<img loading="lazy" fetchpriority="low"
+					     id="2022-02-02(2)" class="photo"
 					     alt="Motion Blur, Dancing Face"
-					     src="/static/photography/3-min.webp"/>
+					     src="https://photography.zedkaido.com/min/2022-02-02(2).webp"/>
 				</a>
-				<a href="/static/photography/2.webp" target="_blank">
-					<img loading="lazy"
-					     fetchpriority="low"
-					     id="2" class="photo"
-					     alt="EQ to +6"
-					     src="/static/photography/2-min.webp"/>
+				<a href="https://photography.zedkaido.com/2022-02-02(1).webp" target="_blank">
+					<img loading="lazy" fetchpriority="low"
+					id="2022-02-02(1)" class="photo"
+					alt="EQ to +6"
+					src="https://photography.zedkaido.com/min/2022-02-02(1).webp"/>
 				</a>
-				<a href="/static/photography/1.webp" target="_blank">
-					<img loading="lazy"
-					     fetchpriority="low"
-					     id="1" class="photo"
-					     alt="Visual Surprise"
-					     src="/static/photography/1-min.webp"/>
-				</a>
-				<a href="/static/photography/0.webp" target="_blank">
-					<img loading="lazy"
-					     fetchpriority="low"
-					     id="0" class="photo"
-					     alt="John Miles Record Screwed in"
-					     src="/static/photography/0-min.webp"/>
+				<a href="https://photography.zedkaido.com/2022-01-01.webp" target="_blank">
+					<img loading="lazy" fetchpriority="low"
+					     id="2022-01-01" class="photo"
+					     alt="John Miles Record on a screw"
+					     src="https://photography.zedkaido.com/min/2022-01-01.webp"/>
 				</a>
 			</div>
 
 			<footer>
-				<vertical><opus-humanum><b>OPUS HUMANUM</b></opus-humanum></vertical>
+				<opus-humanum>OPUS HUMANUM</opus-humanum>
 			</footer>
 		</div>
 	</body>

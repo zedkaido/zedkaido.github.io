@@ -2,9 +2,107 @@
 	<channel>
 		<title>Zed Kaido - Feed</title>
 		<link>https://zedkaido.com</link>
-		<description>Life is a symphony. Turn up the volume! Sing out loud! Make your sound.</description>
+		<description>To be honest, what or who I am, I don't know.</description>
 		<language>en-gb</language>
 	</channel>
+
+	<item>
+		<category>writing</category>
+		<title>xES - !x Engine Selector</title>
+		<link>https://zedkaido.com/writing/xes/</link>
+		<guid>https://zedkaido.com/writing/xes/</guid>
+		<pubDate>Fri, 04 Dec 2025 00:00:00 +0000</pubDate>
+		<description><![CDATA[
+		<a href="https://zedkaido.com/writing/xes/" target="_blank">
+			<h1>xES - !x Engine Selector</h1>
+		</a>
+		<p>!xES - an open source alternative to DuckDuckGo !bangs that runs in your browser.</p>	
+		]]></description>
+	</item>
+
+	<item>
+		<category>photography</category>
+		<title>2025-12-01 (Photography)</title>
+		<link>https://photography.zedkaido.com/2025-12-01.webp</link>
+		<guid>https://photography.zedkaido.com/2025-12-01.webp</guid>
+		<pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
+		<description><![CDATA[
+		<a href="https://photography.zedkaido.com/2025-12-01.webp" target="_blank">
+			<img alt="The suspense of a Mac which mysteriously awaits bytes through sailing ships traveling guided by the keyboard's cable."
+			     src="https://photography.zedkaido.com/min/2025-12-01.webp"/>
+		</a>
+		]]></description>
+	</item>
+
+	<item>
+		<category>photography</category>
+		<title>2025-11-11 (Photography)</title>
+		<link>https://photography.zedkaido.com/2025-11-11.webp</link>
+		<guid>https://photography.zedkaido.com/2025-11-11.webp</guid>
+		<pubDate>Tue, 11 Nov 2025 00:00:00 +0000</pubDate>
+		<description><![CDATA[
+		<a href="https://photography.zedkaido.com/2025-11-11.webp" target="_blank">
+			<img alt="The light of possibility."
+			     src="https://photography.zedkaido.com/min/2025-11-11.webp" />
+		</a>
+		]]></description>
+	</item>
+
+	<item>
+		<category>photography</category>
+		<title>2025-10-11 (Photography)</title>
+		<link>https://photography.zedkaido.com/2025-10-11.webp</link>
+		<guid>https://photography.zedkaido.com/2025-10-11.webp</guid>
+		<pubDate>Sat, 11 Oct 2025 00:00:00 +0000</pubDate>
+		<description><![CDATA[
+		<a href="https://photography.zedkaido.com/2025-10-11.webp" target="_blank">
+			<img alt="PL-30 125 HT" 
+			     src="https://photography.zedkaido.com/min/2025-10-11.webp" />
+		</a>
+		]]></description>
+	</item>
+
+	<item>
+		<category>photography</category>
+		<title>2025-10-10 (Photography)</title>
+		<link>https://photography.zedkaido.com/2025-10-10.webp</link>
+		<guid>https://photography.zedkaido.com/2025-10-10.webp</guid>
+		<pubDate>Fri, 10 Oct 2025 00:00:00 +0000</pubDate>
+		<description><![CDATA[
+		<a href="https://photography.zedkaido.com/2025-10-10.webp" target="_blank">
+			<img alt="The brutal reality of life." 
+			     src="https://photography.zedkaido.com/min/2025-10-10.webp" />
+		</a>
+		]]></description>
+	</item>
+
+	<item>
+		<category>photography</category>
+		<title>2025-09-12 (Photography)</title>
+		<link>https://photography.zedkaido.com/2025-09-12.webp</link>
+		<guid>https://photography.zedkaido.com/2025-09-12.webp</guid>
+		<pubDate>Fri, 12 Sep 2025 00:00:00 +0000</pubDate>
+		<description><![CDATA[
+		<a href="https://photography.zedkaido.com/2025-09-12.webp" target="_blank">
+			<img alt="Oh moon, my moon."
+			     src="https://photography.zedkaido.com/min/2025-09-12.webp" />
+		</a>
+		]]></description>
+	</item>
+
+	<item>
+		<category>photography</category>
+		<title>2025-08-04 (Photography)</title>
+		<link>https://photography.zedkaido.com/2025-08-04.webp</link>
+		<guid>https://photography.zedkaido.com/2025-08-04.webp</guid>
+		<pubDate>Mon, 04 Aug 2025 00:00:00 +0000</pubDate>
+		<description><![CDATA[
+		<a href="https://photography.zedkaido.com/2025-08-04.webp" target="_blank">
+			<img alt="The radiation of a lamp in Lisbon's commerce square."
+			     src="https://photography.zedkaido.com/min/2025-08-04.webp" />
+		</a>
+		]]></description>
+	</item>
 
 	<item>
 		<category>writing</category>
@@ -13,7 +111,10 @@
 		<guid>https://zedkaido.com/writing/ditch-your-isps-dns-resolver/</guid>
 		<pubDate>Fri, 14 May 2025 00:00:00 +0000</pubDate>
 		<description><![CDATA[
-		<p>Why switch your DNS Resolver to 1.1.1.1</p>	
+		<a href="https://zedkaido.com/writing/ditch-your-isps-dns-resolver/" target="_blank">
+			<h1>Ditch your ISPs DNS Resolver</h1>
+		</a>
+		<p>Your internet service provider is probably spying on you. There are quite a few reasons to update your DNS Resolvers.<p>	
 		]]></description>
 	</item>
 
@@ -24,7 +125,10 @@
 		<guid>https://zedkaido.com/writing/firefox-without-a-tab-bar/</guid>
 		<pubDate>Fri, 13 May 2025 00:00:00 +0000</pubDate>
 		<description><![CDATA[
-		<p>This article provides the WHY and HOW to use Firefox without a TAB Bar.</p>	
+		<a href="https://zedkaido.com/writing/firefox-without-a-tab-bar/" target="_blank">
+			<h1>Firefox Without a TAB Bar</h1>
+		</a>
+		<p>Why and how I use Firefox without a TAB Bar.</p>	
 		]]></description>
 	</item>
 
@@ -35,6 +139,9 @@
 		<guid>https://zedkaido.com/writing/download-discontinued-android-file-transfer-app/</guid>
 		<pubDate>Fri, 07 May 2025 00:00:00 +0000</pubDate>
 		<description><![CDATA[
+		<a href="https://zedkaido.com/writing/download-discontinued-android-file-transfer-app/" target="_blank">
+			<h1>Download Discontinued Android File Transfer.app</h1>
+		</a>
 		<p>Android File Transfer was discontinued.</p>
 		<p>This article provides the, still available, download link and an alternative solution (adb).</p>	
 		]]></description>
@@ -47,7 +154,38 @@
 		<guid>https://zedkaido.com/writing/dead-web/</guid>
 		<pubDate>Mon, 05 May 2025 00:00:00 +0000</pubDate>
 		<description><![CDATA[
+		<a href="https://zedkaido.com/writing/dead-web/" target="_blank">
+			<h1>Dead Web</h1>
+		</a>
 		<p>On links. Dead links. And, perhaps the answer to why they are dead.</p>
+		]]></description>
+	</item>
+
+	<item>
+		<category>photography</category>
+		<title>2025-01-21 (Photography)</title>
+		<link>https://photography.zedkaido.com/2025-01-21.webp</link>
+		<guid>https://photography.zedkaido.com/2025-01-21.webp</guid>
+		<pubDate>Tue, 21 Jan 2025 00:00:00 +0000</pubDate>
+		<description><![CDATA[
+		<a href="https://photography.zedkaido.com/2025-01-21.webp" target="_blank">
+			<img alt="Circle in the dark, what is it?"
+			     src="https://photography.zedkaido.com/min/2025-01-21.webp"/>
+		</a>
+		]]></description>
+	</item>
+
+	<item>
+		<category>photography</category>
+		<title>2024-12-24 (Photography)</title>
+		<link>https://photography.zedkaido.com/2024-12-24.webp</link>
+		<guid>https://photography.zedkaido.com/2024-12-24.webp</guid>
+		<pubDate>Tue, 24 Dec 2024 00:00:00 +0000</pubDate>
+		<description><![CDATA[
+		<a href="https://photography.zedkaido.com/min/2024-12-24.webp" target="_blank">
+			<img alt="Eyes wide open." 
+			     src="https://photography.zedkaido.com/min/2024-12-24.webp"/>
+		</a>
 		]]></description>
 	</item>
 
@@ -58,7 +196,24 @@
 		<guid>https://zedkaido.com/writing/offline/</guid>
 		<pubDate>Sun, 30 Jun 2024 00:00:00 +0000</pubDate>
 		<description><![CDATA[
-		<p>WHY go offline? And HOW?</p>
+		<a href="https://zedkaido.com/writing/offline/" target="_blank">
+			<h1>Offline</h1>
+		</a>
+		<p>Why and how to go offline?</p>
+		]]></description>
+	</item>
+
+	<item>
+		<category>photography</category>
+		<title>2024-04-24 (Photography)</title>
+		<link>https://photography.zedkaido.com/2024-04-24.webp</link>
+		<guid>https://photography.zedkaido.com/2024-04-24.webp</guid>
+		<pubDate>Thu, 24 Apr 2024 00:00:00 +0000</pubDate>
+		<description><![CDATA[
+		<a href="https://photography.zedkaido.com/2024-04-24.webp" target="_blank">
+			<img alt="White Flare in the Dark" 
+			     src="https://photography.zedkaido.com/min/2024-04-24.webp"/>
+		</a>
 		]]></description>
 	</item>
 
@@ -69,6 +224,9 @@
 		<guid>https://zedkaido.com/writing/flicker-free-theme-switching-in-svelte-kit/</guid>
 		<pubDate>Tue, 10 Aug 2023 00:00:00 +0000</pubDate>
 		<description><![CDATA[
+		<a href="https://zedkaido.com/writing/flicker-free-theme-switching-in-svelte-kit/" target="_blank">
+			<h1>Seamless/Flicker-Free Theme Switching in Svelte-kit</h1>
+		</a>
 		<p>A practical solution to flicker-free theme switching in Svelte-kit (can be adapted to other frameworks).</p>
 		]]></description>
 	</item>
@@ -80,6 +238,9 @@
 		<guid>https://zedkaido.com/writing/how-to-add-www-support-to-cloudflare-pages/</guid>
 		<pubDate>Tue, 23 May 2023 00:00:00 +0000</pubDate>
 		<description><![CDATA[
+		<a href="https://zedkaido.com/writing/how-to-add-www-support-to-cloudflare-pages/" target="_blank">
+			<h1>How to add www support to Cloudflare Pages.</h1>
+		</a>
 		<p>A step-by-step guide on how to set-up www redirection using Cloudflare Page Rules.</p>
 		]]></description>
 	</item>
@@ -90,6 +251,13 @@
 		<link>https://zedkaido.com/music/zorba-the-greek/</link>
 		<guid>https://zedkaido.com/music/zorba-the-greek/</guid>
 		<pubDate>Tue, 03 May 2023 00:00:00 +0000</pubDate>
+		<description><![CDATA[
+		<a href="https://zedkaido.com/music/zorba-the-greek/" target="_blank">
+			<h1>Zorba The Greek</h1>
+			<img alt="[SINGLE] Cover for Zorba The Greek"
+				src="https://images.zedkaido.com/music/s/zorba-the-greek/zorba-the-greek--thumb-min.webp" />
+		</a>
+		]]></description>
 	</item>
 
 	<item>
@@ -98,6 +266,13 @@
 		<link>https://zedkaido.com/music/cotton-eye-joe/</link>
 		<guid>https://zedkaido.com/music/cotton-eye-joe/</guid>
 		<pubDate>Fri, 03 Mar 2023 00:00:00 +0000</pubDate>
+		<description><![CDATA[
+		<a href="https://zedkaido.com/music/cotton-eye-joe/" target="_blank">
+			<h1>Cotton Eye Joe (Afro House Mix)</h1>
+			<img alt="[SINGLE] Cover for Cotton Eye Joe"
+				src="https://images.zedkaido.com/music/s/cotton-eye-joe/cotton-eye-joe--thumb-min.webp" />
+		</a>
+		]]></description>
 	</item>
 
 	<item>
@@ -106,6 +281,13 @@
 		<link>https://zedkaido.com/music/can-can-offenbach-is-in-the-house/</link>
 		<guid>https://zedkaido.com/music/can-can-offenbach-is-in-the-house/</guid>
 		<pubDate>Fri, 24 Feb 2023 00:00:00 +0000</pubDate>
+		<description><![CDATA[
+		<a href="https://zedkaido.com/music/can-can-offenbach-is-in-the-house/" target="_blank">
+			<h1>Can Can: Offenbach is In The House</h1>
+			<img alt="[SINGLE] Cover for Can Can: Offenbach is In The House"
+			     src="https://images.zedkaido.com/music/s/can-can-offenbach-is-in-the-house/can-can-offenbach-is-in-the-house--thumb-min.webp" />
+		</a>
+		]]></description>
 	</item>
 
 	<item>
@@ -114,6 +296,13 @@
 		<link>https://zedkaido.com/music/bachs-ghost-in-the-machine/</link>
 		<guid>https://zedkaido.com/music/bachs-ghost-in-the-machine/</guid>
 		<pubDate>Mon, 13 Feb 2023 00:00:00 +0000</pubDate>
+		<description><![CDATA[
+		<a href="https://zedkaido.com/music/bachs-ghost-in-the-machine/" target="_blank">
+			<h1>Bach's Ghost In The Machine</h1>
+			<img alt="[SINGLE] Cover for Bach's Ghost in The Machine"
+				 src="https://images.zedkaido.com/music/s/bachs-ghost-in-the-machine/bachs-ghost-in-the-machine--thumb-min.webp" />
+		</a>
+		]]></description>
 	</item>
 
 	<item>
@@ -122,6 +311,83 @@
 		<link>https://zedkaido.com/music/second-rendez-vous-redux/</link>
 		<guid>https://zedkaido.com/music/second-rendez-vous-redux/</guid>
 		<pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate>
+		<description><![CDATA[
+		<a href="https://zedkaido.com/music/second-rendez-vous-redux/" target="_blank">
+			<h1>Second Rendez-Vous (Redux)</h1>
+			<img alt="[SINGLE] Cover for Second Rendez-Vous (Redux)"
+			     src="https://images.zedkaido.com/music/s/second-rendez-vous-redux/second-rendez-vous-redux--thumb-min.webp" />
+		</a>
+		]]></description>
+	</item>
+
+	<item>
+		<category>photography</category>
+		<title>2022-02-02(4) (Photography)</title>
+		<link>https://photography.zedkaido.com/2022-02-02(4).webp</link>
+		<guid>https://photography.zedkaido.com/2022-02-02(4).webp</guid>
+		<pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate>
+		<description><![CDATA[
+		<a href="https://photography.zedkaido.com/2022-02-02(4).webp" target="_blank">
+			<img alt="Zed Kaido photo (surprised expression)"
+			     src="https://photography.zedkaido.com/min/2022-02-02(4).webp"/>
+		</a>
+		]]></description>
+	</item>
+
+	<item>
+		<category>photography</category>
+		<title>2022-02-02(3) (Photography)</title>
+		<link>https://photography.zedkaido.com/2022-02-02(3).webp</link>
+		<guid>https://photography.zedkaido.com/2022-02-02(3).webp</guid>
+		<pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate>
+		<description><![CDATA[
+		<a href="https://photography.zedkaido.com/2022-02-02(3).webp" target="_blank">
+			<img alt="Zed Kaido photo (singing out loud)"
+			     src="https://photography.zedkaido.com/min/2022-02-02(3).webp"/>
+		</a>
+		]]></description>
+	</item>
+
+	<item>
+		<category>photography</category>
+		<title>2022-02-02(2) (Photography)</title>
+		<link>https://photography.zedkaido.com/2022-02-02(2).webp</link>
+		<guid>https://photography.zedkaido.com/2022-02-02(2).webp</guid>
+		<pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate>
+		<description><![CDATA[
+		<a href="https://photography.zedkaido.com/2022-02-02(2).webp" target="_blank">
+			<img alt="Motion Blur, Dancing Face"
+			     src="https://photography.zedkaido.com/min/2022-02-02(2).webp"/>
+		</a>
+		]]></description>
+	</item>
+
+	<item>
+		<category>photography</category>
+		<title>2022-02-02(1) (Photography)</title>
+		<link>https://photography.zedkaido.com/2022-02-02(1).webp</link>
+		<guid>https://photography.zedkaido.com/2022-02-02(1).webp</guid>
+		<pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate>
+		<description><![CDATA[
+		<a href="https://photography.zedkaido.com/2022-02-02(1).webp" target="_blank">
+			<img alt="EQ to +6"
+			     src="https://photography.zedkaido.com/min/2022-02-02(1).webp"/>
+		</a>
+		]]></description>
+	</item>
+
+	<item>
+		<category>photography</category>
+		<title>2022-01-01 (Photography)</title>
+		<link>https://photography.zedkaido.com/2022-01-01.webp</link>
+		<guid>https://photography.zedkaido.com/2022-01-01.webp</guid>
+		<pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+		<description><![CDATA[
+		<a href="https://photography.zedkaido.com/2022-01-01.webp" target="_blank">
+			<img alt="John Miles Record on a screw"
+			     src="https://photography.zedkaido.com/min/2022-01-01.webp"/>
+		</a>
+		]]></description>
 	</item>
 
 </rss>

@@ -10,7 +10,11 @@
 	<style>
 		.quote-block {
 			margin: 1.5em 0;
-			max-width: 444px
+			max-width: 488px;
+		}
+		#anthropos {
+			font-family: serif;
+			font-size: 1.25em;
 		}
 		code {
 			font-size: 0.9em;
@@ -27,16 +31,16 @@
 			<div class="quote-block">
 				<hr>
 				<p><q id="quote">As you start to walk on the way, the way appears.</q></p>
-				<span style="margin-top: -2em;">-- Human</span>
+				<span style="margin-top: -2em;">--- <span id="anthropos">Anthropos (άνθρωπος)</span></span>
 				<hr>
 			</div>
 
 			<p>
 			<code>#search-engine</code> <code>!bangs</code>
 			<br><a class="ff" href="./xes">
-				XES (X Engine Selector)
+				xES - <code>!x</code> Engine Selector
 			</a>
-			<br><small><span>2025-05-18</span></small>
+			<br><small><span>2025-12-04</span></small>
 			</p>
 
 			<p>
@@ -96,102 +100,11 @@
 			</p>
 
 			<footer>
-				<vertical><opus-humanum><b>OPUS HUMANUM</b></opus-humanum></vertical>
+				<opus-humanum>OPUS HUMANUM</opus-humanum>
 			</footer>
 		</div>
-		<script>
-			const quotes = [
-				"Two mistakes: not starting and not finishing.",
-				"Nothing exists as it appears",
-				"Let not your left hand knoweth what your right hand doeth",
-				"So long you are in the present, there aren't any problems.",
-				"Make what you wish existed.",
-				"If the compiler cannot reason about the code, neither can the programmer.",
-				"As you start to walk on the way, the way appears.",
-				"It is a sad fate for a man to die too well known to everybody else and still unknown to himself.",
-				"The perfect blossom is a rare thing. You could spend your life looking for one, and it would not be a wasted life.",
-				"The best way to predict the future is to invent it.",
-				"Success is not final, failure is not fatal. It is the courage to continue that counts.",
-				"Life is what happens when you're too busy making other plans.",
-				"What are you afraid of losing when nothing in the world belongs to you?",
-				"Once a task has just began, never leave it till it's done. Be the labor great or small, do it well or not at all.",
-				"A person who thinks all the time, has nothing to think about except thoughts.",
-				"What we think, we become.",
-				"Time is not had, Time is made.",
-				"The object isn't to make art, it's to be in that wonderful state which makes art inevitable.",
-				"I don't play chords, I play movements.",
-				"Those who know don't say, those who say don't know.",
-				"It's not the pursuit of happiness, it's the happiness of the pursuit.",
-				"When faced with a coding decision choose the path that makes future change easier.",
-				"Make each program do one thing well. To do a new job, build afresh rather than complicate old programs by adding new features.",
-				"Education is what others do to you. Learning is what you must always do to yourself.",
-				"Negativity is the enemy of creativity.",
-				"Growth starts when you start doing the things you're not qualified to do.",
-				"When the power of love overcomes the love of power the world will know peace.",
-				"I've learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel.",
-				"When you tear a man's tongue, you are not proving him a liar, you are telling the world that you fear what he might say.",
-				"I would hate to lose out on becoming a better version of me.",
-				"It is no measure of health to be well adjusted to a profoundly sick society.",
-				"If you spend your entire life consuming information to reach a certain understanding of the world, so that you can then live life, you are missing the point.",
-				"The best time to plant a tree was 20 years ago. The second best time is now.",
-				"When madmen rule the world, the sane will be called crazy.",
-				"When you tear out a man's tongue, you are not proving him a liar, you're only telling the world that you fear what he might say.",
-				"Somehow, no one is bored, but everything seems boring.",
-				"When exposing a crime is treated as committing a crime, you are being ruled by criminals.",
-				"There's nothing we can hold on to in this world. Only by letting go can we truly possess what is real.",
-				"I write only when inspirations strikes. Fortunately it strikes every morning at nine o'clock sharp.",
-				"None are more hopelessly enslaved than those who falsely believe they are free.",
-				"It is only when a mosquito lands on your testicles that you realize there is always a way to solve problems without using violence.",
-				"Don't put in your mouth, what you don't want to touch with your hands.",
-				"If you think your work is original - you are either ignorant or you are simply arogant.",
-				"Truth doesn't mind being questioned. A lie does not like being challenged.",
-				"A wise man will climb Fuji once, only a fool climbs it twice.",
-				"Don't be a noun, be a verb.",
-				"A complex system usually reflects an absence of good design.",
-				"Dream so big that you can't get any goal.",
-				"The clock has made us into time-keepers, and then time-savers, and now time-servers.",
-				"To offend a strong men, tell him a lie. To offend a weak man, tell him the truth.",
-				"If you sit down and write quietly the whole day, you'll have written two or three pages, even if it's a struggle. And if you keep at it, you'll eventually have a couple hundred pages. I think young people today don't know the trick of it. They start and want to get to the end right away. When you go mountain climbing, the first thing you're told is not to look at the peak but to keep your eyes on the ground as you climb. You just keep climbing patiently one step at a time. If you keep looking at the top you'll get frustrated. I think writing is similar. You need to get used to the task of writing. You must make an effort to learn to regard it not as something painful but as routine. But most people tend to give up halfway.",
-				"Death is the single greatest invention of life, because it makes way for the new.",
-				"Some of the most qualified people make the least interesting stuff.",
-				"Tolerance will reach such a level that intelligent people will be banned from thinking so as not to offend the imbeciles.",
-				"Since light travels faster than sound, people may apper bright until you hear them speak.",
-				"It's more fun to be a Pirate than to join the Navy.",
-				"Physical slavery requires people to be housed and fed. Economic slavery requires people to feed and house themselves.",
-				"Look for what you notice but no one else sees.",
-				"No rules are universal (except this one).",
-				"Those who would be gods refashion themselves into images the vieweres would have them be",
-				"If you're going to try, go all the way. Otherwise, don't even start. This could mean losing girlfriends, wives, relatives and maybe even your mind. It could mean not eating for three or four days. It could mean freezing on a park bench. It could mean jail. It could mean derision. It could mean mockery--isolation. Isolation is the gift. All the others are a test of your endurance, of how much you really want to do it. And, you'll do it, despite rejection and worst odds. And it will be better than anything else you can imagine. If you're going to try, go all the way. There is no other feeling like that. You will be alone with the gods, and the nights will flame with fire. You will ride life straight to perfect laughter. It's the only good fight there is.",
-				"Competitive Programming is like solving a riddle. Software engineering is like solving a murder.",
-				"If you want to pass through this gate, do not give rise to thinking.",
-				"The greatest joke ever told was told as a truth. The greatest truth ever told was told as a joke.",
-				"Don't wait until you're good enough, play right away - that's the only way.",
-				"I write entirely to find out what I'm thinking, what I am looking at, what I see and what it means.",
-				"Play a lot, practice a little.",
-				"You'll learn to swim faster, if you get in the water.",
-				"Life moves pretty fast. You don't stop and look around once in a while, you could miss it.",
-				"You need no qualification to begin.",
-				"Do not rule over imaginary kingdoms of endlessly proliferating possibilities.",
-				"It's okay to live a life other people don't understand.",
-				"People are strange: They are constantly angered by trivial things, but on a major matter like totally wasting their lives, they hardly seem to notice.",
-				"The journey is woth way more than the destination.",
-				"Nie dam sie.",
-				"Homo Ludens",
-				"Spring comes, the grass grows by itself.",
-				"The more you know, the less you see.",
-				"Do not spend your life seeking fulfilment where it cannot be found. Know thyself!",
-				"The most dangerous thing you can do as a creative person, is to think that you know what you're doing. Because the moment you think you know what you're doing, you become blind to other ways of doing it.",
-				"What are you afraid of losing, when nothing in the world belongs to you",
-				"What befalls others today, may be your own fate tomorrow.",
-				"The reason to finish is so you start something new!",
-				"I would rather die living, than live dead!",
-				"Good design is as little design as possible.",
-				"All of humanities problems stem from mans inability to sit quietly in a room alone.",
-			];
-			function randomQuote() {
-				const index = Math.floor(Math.random() * quotes.length);
-				return quotes[index];
-			}
+		<script type="module">
+			import { randomQuote } from './quotes.js';
 			window.onload = () => {
 				document.getElementById("quote").textContent = randomQuote();
 			};

@@ -2,51 +2,60 @@
 <html lang="en">
 	<head>
 		<title>
-			XES - X Engine Selector	
+			xES - !x Engine Selector
 		</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<meta charset="utf-8">
 		<meta name="author" content="Zed Kaido">
-		<meta name="date" content="2025-05-14">
+		<meta name="date" content="2025-12-04">
 		<link rel="stylesheet" href="/style.css">
 		<link rel="icon" href="/favicon.ico" />
 	</head>
 	<body>
-		<div class="page">
+		<div class="page page-writing">
 			<header>
 				<special>笑</special> | <a class="ff" href="/">zedkaido.com</a> &gt; <a class="ff" href="/writing">writing</a> | <a href="/rss.xml">RSS</a>
 			</header>
 			<article>
+				<div class="creds">
+					<b>2025-12-04</b>
+				</div>
+				<div class="creds">
+					Written by <b>Zed Kaido</b>
+				</div>
+				
 				<h1>
-					<a href="https://xes.zedkaido.com" target="_blank">XES</a> (X Engine Selector)
+					<a href="https://xes.zedkaido.com" target="_blank">xES</a> - <code>!x</code> Engine Selector
 				</h1>
 
 				<p>
-				Why would you use duck duck go <code>!bangs</code> when you can have a faster, local, private, open-source, configurable solution.
-				</p>
+				<b>!xES</b> is an open-source alternative to DuckDuckGo <b>!bangs</b> which significantly outperforms its redirect latency by caching ≈ 8.42 KiB of JS in your browser.
 				<p>
-				That's the idea behind <b>XES</b> aka. X Engine Selector.
+
+				<p>
+				If you've been living under a rock, <b>!bangs</b> are shortcuts to other search engines.
+				For example, you can quickly search wikipedia with <code><b>!wiki Hutter Prize</b></code>; Google with <code><b>!g do a barrell role</b></code>; YouTube with <code><b>Zed Kaido !yt music</b></code>.
+				</p>
+
+				<hr>
+				<p>Visit <a href="https://xes.zedkaido.com/bangs.js" targe="_blank">xes.zedkaido.com/bangs.js</a> for the full list of bangs.</p>
+				<hr>
+
+				<p>
+				If you are happy with the pre-defined bangs, you can set the default search engine in your browsers to:
+				</p>
+				<input size="84" type="text" class="url-input" value="https://xes.zedkaido.com?q=%s" readonly />
+
+				<p>
+				<hi><b>WARNING</b></hi>: <b>I may update/remove the current bangs at any time.</b>
 				</p>
 
 				<p>
-				If you've been living under a rock, <code>!bangs</code> are shortcuts to other search engines.
-				For example, you can quickly search wikipedia with <code>!wiki Hutter Prize</code>, Google with <code>!g do a barrell role</code>, or YouTube with <code>Google IO 2025 !yt</code>.
-				</p>
-
-				<p>
-				If you are happy with <a href="https://xes.zedkaido.com/" target="_blank">xes.zedkaido.com</a> bangs, just set <code>https://xes.zedkaido.com/?q=%s</code> as your default search engine.
-				</p>
-
-				<p>
-				XES's JS is cached locally, so redirects are done in your browser. 
-				</p>
-
-				<p>
-				Otherwise, you can clone <a href="https://github.com/zedkaido/xes" target="_blank">github.com/zedkaido/xes</a> and edit <code>src/bangs.js</code> bangs to your liking. It's quite easy.
+				That being said, I personally recommend forking <a href="https://github.com/zedkaido/xes" target="_blank">github.com/zedkaido/xes</a>, editing <a href="https://github.com/zedkaido/xes/blob/master/public/bangs.js" target="_blank"><code>/bangs.js</code></a> to your liking and serving it within your walls of comfort.
 				</p>
 
 <div class="pre-header">
-	src/bangs.js
+	/bangs.js
 </div>
 <pre>
 export const bangs = {
@@ -54,16 +63,24 @@ export const bangs = {
 		name: "Google Search",
 		url: "https://www.google.com/search?q={{{s}}}"
 	},
-	<comment>// ...</comment>
+	"l": {
+		name: "Google Search (Link)",
+		url: "http://www.google.com/search?as_lq={{{s}}}&hl=en&btnG=Search"
+	},
+	"b": {
+		name: "Brave Search",
+		url: "https://search.brave.com/?q={{{s}}}"
+	},
+
+	<comment>// --------------------------------------------</comment>
+	<comment>// For the full list: <a href="https://xes.zedkaido.com/bangs.js" target="_blank">xes.zedkaido.com/bangs.js</a></comment>
+	<comment>// --------------------------------------------</comment>
 }
 </pre>
 
-				<hr>
-				<p>
-					<span class="date">2025-05-14</span><br>
-					by Zed Kaido
-				</p>
 			</article>
+
+			<opus-humanum>OPUS-HUMANUM</opus-humanum>
 		</div>
 		<script>
 			document.querySelectorAll('a.ff').forEach(a => {

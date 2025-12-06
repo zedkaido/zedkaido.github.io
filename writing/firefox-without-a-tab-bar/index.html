@@ -12,18 +12,23 @@
 		<link rel="icon" href="/favicon.ico" />
 	</head>
 	<body>
-		<div class="page">
+		<div class="page page-writing">
 			<header>
 				<special>笑</special> | <a class="ff" href="/">zedkaido.com</a> &gt; <a class="ff" href="/writing">writing</a> | <a href="/rss.xml">RSS</a>
 			</header>
 			<article>
+				<div class="creds">
+					<b>2025-05-13</b>
+				</div>
+				<div class="creds">
+					Written by <b>Zed Kaido</b>
+				</div>
+
 				<h1>
-					<a href="./">
-						Firefox Without a TAB Bar 
-					</a>
+					Firefox Without a TAB Bar 
 				</h1>
-				<p>
-				<b>Requirements</b>: <a href="https://www.mozilla.org/firefox">Firefox</a>, <a href="https://librewolf.net/">Librewolf</a>, <a href="https://thorium.rocks/mercury">Mercury</a> (or any other major fork)
+
+				<p><b>Requirements</b>: <a href="https://www.mozilla.org/firefox">Firefox</a>, <a href="https://librewolf.net/">Librewolf</a>, <a href="https://thorium.rocks/mercury">Mercury</a> (or any other major fork)
 				</p>
 
 				<p>
@@ -147,23 +152,18 @@
 				     src="https://images.zedkaido.com/writing/firefox-without-a-tab-bar/librewolf.webp" />
 				
 				<p>
-				And, if you want to go above and beyond, try <a href="https://qutebrowser.org/">qutebrowser</a> or <a href="https://nyxt.atlas.engineer/">nyxt</a>.
+				And, if you want to go above and beyond, try <a href="https://qutebrowser.org/">qutebrowser</a> or <a href="https://nyxt.atlas.engineer/">nyxt</a> (<code>&lt;Shift-t&gt;</code>).
 				</p>
 
 				<img loading="lazy"
 				     width="100%"
 				     style="border: 1px solid var(--color-fg);"
 				     src="https://images.zedkaido.com/writing/firefox-without-a-tab-bar/qutebrowser.webp" />
-
-				<hr>
-				<footer>
-					<p>
-						<span class="date">2025-05-13</span><br>
-						by Zed Kaido
-					</p>
-				</footer>
 			</article>
+
+			<opus-humanum>OPUS HUMANUM</opus-humanum>
 		</div>
+
 		<script>
 			document.querySelectorAll('a.ff').forEach(a => {
 				a.addEventListener('mousedown', e => { if (e.button == 0) this.location = a.href; })

@@ -12,15 +12,20 @@
 		<link rel="icon" href="/favicon.ico" />
 	</head>
 	<body>
-		<div class="page">
+		<div class="page page-writing">
 			<header>
 				<special>笑</special> | <a class="ff" href="/">zedkaido.com</a> &gt; <a class="ff" href="/writing">writing</a> | <a href="/rss.xml">RSS</a>
 			</header>
 			<article>
+				<div class="creds">
+					<b>2025-05-14</b>
+				</div>
+				<div class="creds">
+					Written by <b>Zed Kaido</b>
+				</div>
+
 				<h1>
-					<a href="./">
-						Ditch Your ISPs DNS Resolver	
-					</a>
+					Ditch Your ISPs DNS Resolver	
 				</h1>
 
 				<p>
@@ -28,7 +33,7 @@
 				</p>
 
 				<p>
-				Depending on your local network or device's settings, DNS requests are sent to a select DNS Resolver (<b><q>The Internet's Phone Book</q></b>). Every time you visit a website, send an email, access an app, upload a file, your device communicates with a DNS Resolver in order to translate the address of the website  <a href="https://zedkaido.com"><code>https://one.one.one.one</code></a> into a machine readable IP address <a href="https://1.1.1.1"><code>1.1.1.1</code></a> (generally these are cached on your browser/device). 
+				Depending on your local network or device's settings, DNS requests are sent to a select DNS Resolver (<b><q>The Internet's Phone Book</q></b>). Every time you visit a website, send an email, access an app, upload a file, your device communicates with a DNS Resolver in order to translate the address of the website  <a href="https://one.one.one.one" target="_blank"><code>https://one.one.one.one</code></a> into a machine readable IP address <a href="https://1.1.1.1"><code>1.1.1.1</code></a> (generally these are cached on your browser/device). 
 				</p>
 
 				<p>
@@ -36,7 +41,7 @@
 				</p>
 				
 				<h3>
-				Do you trust your government with your internet traffic? 
+				Should you trust your government with your internet traffic? 
 				</h3>
 
 				<p>
@@ -59,42 +64,63 @@
 				</p>
 
 				<p>
-				One of the best DNS Resolvers out there is Cloudflare's <a href="https://one.one.one.one">1.1.1.1</a>
+				There are quite a few DNS Servers you can opt to use:
 				</p>
+
 				<ul>
-					<li>It is REALLY fast.</li>
-					<li>It is PRIVATE.</li>
-					<li>And, it is really easy to set-up.</li>
+					<li>Cloudflare (1.1.1.1)</li>
+					<li>Google DNS (8.8.8.8)</li>
+					<li>Quad9 (9.9.9.9)</li>
 				</ul>
 
-				<h2 id="setting-up-cloudflare-dns-on-your-device">
-					Setting up 1.1.1.1 on Your Device/Network
+				<h2 id="updating-dns-server-settings">
+					Updating DNS Servers on Your Device/Network
 				</h2>
 
 				<p>
-				If you don't really want to dive into your device/network settings you can simply <a href="https://one.one.one.one/">Download WARP</a> and turn it on. Easy as that.
+				Lookup where your DNS Server settings are on your OS.<br>
+				Then simply update the listings with IPv4, IPv6, (HTTPS and TLS) addresses.
 				</p>
 
-				<p>
-				If, however you would like to change your device's settings it's as simple as updating your DNS Servers to:
-				</p>
 				<ul>
-					<li><code>1.1.1.1</code> (IPv4)</li>
-					<li><code>1.0.0.1</code> (IPv4)</li>
-					<li><code>2606:4700:4700::1111</code> (IPv6)</li>
-					<li><code>2606:4700:4700::1001</code> (IPv6)</li>
+					<li><code>9.9.9.9</code> (IPv4)</li>
+					<li><code>149.112.112.112</code> (IPv4)</li>
+					<li><code>2620:fe::fe</code> (IPv6)</li>
+					<li><code>2620:fe::9</code> (IPv6)</li>
+					<li><code>https://dns.quad9.net/dns-query</code> (HTTPS)</li>
+					<li><code>tls://dns.quad9.net</code> (TLS)</li>
 				</ul>
 
 				<p>
-				You can find <a href="https://developers.cloudflare.com/1.1.1.1/setup/">Cloudflare's Instructions</a> on how to set-it up on any platform - your fridge included ^_-
+				Or, if you're feeling frisky (No Malware blocking and no DNSSEC validation).
+				Make sure you trust your network, if you opt for these:
+				</p>
+				<ul>
+					<li><code>9.9.9.10</code> (IPv4)</li>
+					<li><code>149.112.112.10</code> (IPv4)</li>
+					<li><code>2620:fe::10</code> (IPv6)</li>
+					<li><code>2620:fe::fe:10</code> (IPv6)</li>
+					<li><code>https://dns10.quad9.net/dns-query</code> (HTTPS)</li>
+					<li><code>tls://dns10.quad9.net</code> (TLS)</li>
+				</ul>
+
+				<p>
+				To validate your changes, you can list all the DNS resolvers by running:
 				</p>
 
-				<hr>
+<div class="pre-header">
+	sh
+</div>
+<pre>
+scutil --dns
+</pre>
+
 				<p>
-					<span class="date">2025-05-14</span><br>
-					by Zed Kaido
+				^_-
 				</p>
 			</article>
+
+			<opus-humanum>OPUS HUMANUM</opus-humanum>
 		</div>
 		<script>
 			document.querySelectorAll('a.ff').forEach(a => {

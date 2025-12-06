@@ -2,74 +2,77 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>https://zedkaido.com/</loc>
-		<lastmod>2025-05-08</lastmod>
+		<lastmod>2025-12-06</lastmod>
 	</url>
 
 	<url>
 		<loc>https://zedkaido.com/music/</loc>
-		<lastmod>2025-05-08</lastmod>
-	</url>
-
-	<url>
-		<loc>https://zedkaido.com/music/zorba-the-greek/</loc>
-		<lastmod>2025-05-08</lastmod>
+		<lastmod>2025-12-06</lastmod>
 	</url>
 	<url>
-		<loc>https://zedkaido.com/music/cotton-eye-joe/</loc>
-		<lastmod>2025-05-08</lastmod>
+		<loc>https://zedkaido.com/music/s/zorba-the-greek/</loc>
+		<lastmod>2025-12-06</lastmod>
 	</url>
 	<url>
-		<loc>https://zedkaido.com/music/can-can-offenbach-is-in-the-house/</loc>
-		<lastmod>2025-05-08</lastmod>
+		<loc>https://zedkaido.com/music/s/cotton-eye-joe/</loc>
+		<lastmod>2025-12-06</lastmod>
 	</url>
 	<url>
-		<loc>https://zedkaido.com/music/bachs-ghost-in-the-machine/</loc>
-		<lastmod>2025-05-08</lastmod>
+		<loc>https://zedkaido.com/music/s/can-can-offenbach-is-in-the-house/</loc>
+		<lastmod>2025-12-06</lastmod>
 	</url>
 	<url>
-		<loc>https://zedkaido.com/music/second-rendez-vous-redux/</loc>
-		<lastmod>2025-05-08</lastmod>
+		<loc>https://zedkaido.com/music/s/bachs-ghost-in-the-machine/</loc>
+		<lastmod>2025-12-06</lastmod>
+	</url>
+	<url>
+		<loc>https://zedkaido.com/music/s/second-rendez-vous-redux/</loc>
+		<lastmod>2025-12-06</lastmod>
 	</url>
 
 	<url>
 		<loc>https://zedkaido.com/writing/</loc>
-		<lastmod>2025-05-14</lastmod>
+		<lastmod>2025-12-06</lastmod>
+	</url>
+	<url>
+		<loc>https://zedkaido.com/writing/xes/</loc>
+		<lastmod>2025-12-06</lastmod>
 	</url>
 	<url>
 		<loc>https://zedkaido.com/writing/ditch-your-isps-dns-resolver/</loc>
-		<lastmod>2025-05-14</lastmod>
+		<lastmod>2025-12-06</lastmod>
 	</url>
 	<url>
 		<loc>https://zedkaido.com/writing/firefox-without-a-tab-bar/</loc>
-		<lastmod>2025-05-13</lastmod>
+		<lastmod>2025-12-06</lastmod>
 	</url>
 	<url>
 		<loc>https://zedkaido.com/writing/download-discontinued-android-file-transfer-app/</loc>
-		<lastmod>2025-05-08</lastmod>
+		<lastmod>2025-12-06</lastmod>
 	</url>
 	<url>
 		<loc>https://zedkaido.com/writing/dead-web/</loc>
-		<lastmod>2025-05-08</lastmod>
+		<lastmod>2025-12-06</lastmod>
 	</url>
 	<url>
 		<loc>https://zedkaido.com/writing/offline/</loc>
-		<lastmod>2025-05-08</lastmod>
+		<lastmod>2025-12-06</lastmod>
 	</url>
 	<url>
 		<loc>https://zedkaido.com/writing/flicker-free-theme-switching-in-svelte-kit</loc>
-		<lastmod>2025-05-08</lastmod>
+		<lastmod>2025-12-06</lastmod>
 	</url>
 	<url>
 		<loc>https://zedkaido.com/writing/what-is-your-name/</loc>
-		<lastmod>2025-05-08</lastmod>
+		<lastmod>2025-12-06</lastmod>
 	</url>
 	<url>
 		<loc>https://zedkaido.com/writing/how-to-add-www-support-to-cloudflare-pages/</loc>
-		<lastmod>2025-05-08</lastmod>
+		<lastmod>2025-12-06</lastmod>
 	</url>
 
 	<url>
 		<loc>https://zedkaido.com/photography/</loc>
-		<lastmod>2025-05-08</lastmod>
+		<lastmod>2025-12-06</lastmod>
 	</url>
 </urlset>

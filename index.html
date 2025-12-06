@@ -9,36 +9,41 @@
 		<link rel="icon" href="/favicon.ico" />
 	</head>
 	<style>
+		.page {
+			background: transparent;
+		}
 		nav { 
 			margin-bottom: 1em;
 			line-height: 1.5em;
 			text-wrap: balance;
 		}
-		.zedkaido {
-			display: flex;
-			flex-direction: row;
-			align-items: flex-end;
-		}
 		.zedkaido img {
-			width: 180px;
-			height: 180px;
+			position: relative;
+			width: 100%;
+			height: 3em; 
+			object-fit: cover;
+			border: 1px solid var(--color-fg);
 		}
 		.zedkaido h1 {
-			transform: rotate(90deg);
-			text-wrap: nowrap;
-			margin-left: -1.69em;
-			margin-bottom: 0.20em;
+			font-size: 3.1em;
+			margin: 0.3em 0;
+			letter-spacing: -0.1em;
 			word-spacing: -0.2em;
+			line-height: 1em;
 		}
-		footer { max-width: 342px; }
-		@media (max-width: 250px) {
-			.zedkaido img {
-				width: 100%;
-				height: auto;
+
+		.contacts {
+			width: 100%;
+		}
+
+		@media(max-width: 200px) {
+			.zedkaido h1 {
+				font-size: 2em;
 			}
 		}
 	</style>
 	<body>
+
 		<div class="page">
 			<header>
 				<special>笑</special> | <a class="ff" href="/">zedkaido.com</a> | <a href="/rss.xml">RSS</a>
@@ -53,41 +58,43 @@
 							<b><a class="ff" href="/music">Music</a></b>
 							<b><a class="ff" href="/photography">Photography</a></b>
 						</big>
-					</p>
-				</nav>
-			</div>
+					</p> </nav> </div>
 
 			<div class="zedkaido">
-				<img alt="Photo of Zed Kaido" width=180 src="/static/images/zk-360-q93.webp"/>
+				<a href="https://images.zedkaido.com/zk/zk-360-q93.webp" target="_blank"><img alt="Photo of Zed Kaido" width=180 src="https://images.zedkaido.com/zk/zk-360-q93.webp"/></a>
 				<h1><big>Z</big>ed <big>K</big>aido</h1>
+				<hr>
+				<p>
+				To be honest, what or who I am, I don't know.<br>
+				</p>
 			</div>
-			<p>
-				Life is a Symphony.<br>
-				Turn up the Volume!<br>
-				Sing out Loud!<br>
-				Make your Sound.<br>
-			</p>
+
+			<hr>
 
 			<footer>
-				<hr><p>
-					<b>If you wish to DM me:</b><br>
-					dm [at] zedkaido [dot] com
-				</p>
+				<div class="contacts">
+					<p class="email">
+						<b>If you wish to DM me:</b><br>
+						dm [at] zedkaido [dot] com<br>
+					</p>
+					<p class="email">
+						<b>If you wish to book me for a show:</b><br>
+						bookings [at] zedkaido [dot] com
+					</p>
+				</div>
+
 				<hr>
+
 				<p>
-					<b>If you wish to book me for a show:</b><br>
-					bookings [at] zedkaido [dot] com
+				pub   ed25519/C9B70CAB08370946 [SC]<br>
+				<a href="/zk-pub-key.asc" target="_blank">F2A71629C3423DCBE039D6DFC9B70CAB08370946</a> <b>[<a href="/zk-pub-key.txt" target="_blank">TXT</a>]</b><br>
+				sub   cv25519/4F673365C11B16FE [E]
 				</p>
-				<hr>
-				<p>
-					<b>If you wish to send me spam:</b><br>
-					spam [at] zedkaido [dot] com
-				</p>
-				<hr>
-				</p>
-				<vertical><opus-humanum><b>OPUS HUMANUM</b></opus-humanum></vertical>
 			</footer>
+
+			<opus-humanum>OPUS-HUMANUM</opus-humanum>
 		</div>
+
 		<script>
 			document.querySelectorAll('a.ff').forEach(a => {
 				a.addEventListener('mousedown', e => { if (e.button == 0) this.location = a.href; })

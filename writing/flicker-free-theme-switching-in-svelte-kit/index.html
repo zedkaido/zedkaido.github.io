@@ -13,16 +13,22 @@
 		<link rel="icon" href="/favicon.ico" />
 	</head>
 	<body>
-		<div class="page">
+		<div class="page page-writing">
 			<header>
 				<special>笑</special> | <a class="ff" href="/">zedkaido.com</a> &gt; <a class="ff" href="/writing">writing</a> | <a href="/rss.xml">RSS</a>
 			</header>
 			<article>
+				<div class="creds">
+					<b>2023-08-01</b>
+				</div>
+				<div class="creds">
+					Written by <b>Zed Kaido</b>
+				</div>
+
 				<h1>
-					<a href="./">
-						Seamless/Flicker-Free Theme Switching in Svelte-kit
-					</a>
+					Seamless/Flicker-Free Theme Switching in Svelte-kit
 				</h1>
+
 				<p>Following are some steps you can follow to implement/fix theme screen flickering on page reload/load. These methods can be adapted to any framework.
 				</p>
 				<p>
@@ -139,12 +145,9 @@ import { theme } from '$lib/stores/theme';
 	&lt;/script&gt;
 &lt;/body&gt;
 </pre>
-
-				<p>
-					<span class="date">2023-08-01</span><br>
-					by Zed Kaido
-				</p>
 			</article>
+
+			<opus-humanum>OPUS HUMANUM</opus-humanum>
 		</div>
 		<script>
 			document.querySelectorAll('a.ff').forEach(a => {

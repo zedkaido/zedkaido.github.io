@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Can Can: Offenbach is In The House - by Zed Kaido</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta charset="utf-8">
+		<meta name="author" content="Zed Kaido">
+		<link rel="stylesheet" href="/style.css">
+		<link rel="stylesheet" href="/public/css/track-player.css">
+	</head>
+	<body>
+		<div class="page">
+			<header>
+				<special>笑</special> | <a class="ff" href="/">zedkaido.com</a> &gt; <a class="ff" href="/music">music</a> | <a href="/rss.xml">RSS</a>
+			</header>
+			<div class="track-player">
+				<div class="tp-cover">
+					<img class="tp-cover-img"
+					     alt="Track Cover of Jacques Offenbach laughing uncontrolably at his own creation"
+					     src="https://images.zedkaido.com/music/s/can-can-offenbach-is-in-the-house/can-can-offenbach-is-in-the-house--thumb.webp" />
+				</div>
+				<div class="tp-section">Can Can: Offenbach Is<br> In The House</div>
+				<div class="tp-audio">
+					<button class="tp-play-pause-btn">
+						<div class="tp-play-icon"/>
+					</button>
+					<div class="tp-audio-seek">
+						<audio preload="metadata" crossorigin="anonymous">
+							<source src="https://music.zedkaido.com/s/can-can-offenbach-is-in-the-house.mp3" type="audio/mpeg">
+							<small>Your browser does not support the audio element.</small>
+						</audio>
+						<input class="tp-seek-bar" type="range" max="100" value="0">
+					</div>
+					<div class="tp-timekeeper">
+						<small><span class="tp-time">0:00</span></small>
+						<small><span class="tp-timekeeper-divider">:</span></small>
+						<small><span class="tp-duration">.:..</span></small>
+					</div>
+				</div>
+				<a class="tp-link bandcamp-link"
+				   href="https://zedkaido.bandcamp.com/track/can-can-offenbach-is-in-the-house"
+				   target="_blank"> BUY on Bandcamp
+					<br><small>Studio Quality Download</small>
+				</a>
+				<a class="tp-link tidal-link"
+				   href="https://tidal.com/browse/track/275748595"
+				   target="_blank"> TIDAL
+				</a>
+				<a class="tp-link apple-music-link"
+				   href="https://music.apple.com/us/album/can-can-offenbach-is-in-the-house/1670703617?i=1670703618"
+				   target="_blank"> Apple Music
+				</a>
+				<a class="tp-link spotify-link"
+				   href="https://open.spotify.com/track/2WKbHLFbRQN9g0myfjZl8H?si=61f1651738f74a58"
+				   target="_blank"> Spotify
+				</a>
+				<a class="tp-link youtube-music-link"
+				   href="https://music.youtube.com/watch?v=ixSStOeuyUs&feature=shared"
+				   target="_blank"> YouTube Music
+				</a>
+				<a class="tp-link download-link"
+				   href="https://music.zedkaido.com/s/can-can-offenbach-is-in-the-house.mp3"
+				   target="_blank" download> Download .MP3
+				</a>
+				<div class="tp-credits">
+					<span>
+						<small>Released on</small><br>
+						February 24, 2023<br>
+					</span>
+					<span>
+						<small>Produced, Mixed, Mastered by</small><br>
+						Zed Kaido<br>
+					</span>
+					<span>
+						<small>Composed by<br></small>
+						Jacques Offenbach	
+					</span>
+				</div>
+			</div>
+		</div>
+		<script type="module" src="/public/js/track-player.js"></script>
+		<script>
+			document.querySelectorAll('a.ff').forEach(a => {
+				a.addEventListener('mousedown', e => { if (e.button == 0) this.location = a.href; })
+			});
+		</script>
+	</body>
+</html>
