@@ -8,6 +8,21 @@
 
 	<item>
 		<category>writing</category>
+		<title>alias r='fc -s'</title>
+		<link>https://zedkaido.com/writing/alias-r/</link>
+		<guid>https://zedkaido.com/writing/alias-r/</guid>
+		<pubDate>Fri, 08 Dec 2025 00:00:00 +0000</pubDate>
+		<description><![CDATA[
+		<a href="https://zedkaido.com/writing/alias-r/" target="_blank">
+			<h1>alias r='fc -s'</h1>
+		</a>
+		<p>With the <code>fc -s [pat=rep ...] [commmand]</code> format, COMMAND is re-executed after performing the OLD=NEW substitution.</p>	
+		<p>...</p>
+		]]></description>
+	</item>
+
+	<item>
+		<category>writing</category>
 		<title>xES - !x Engine Selector</title>
 		<link>https://zedkaido.com/writing/xes/</link>
 		<guid>https://zedkaido.com/writing/xes/</guid>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>
+			alias r='fc -s' - Zed Kaido
+		</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta charset="utf-8">
+		<meta name="author" content="Zed Kaido">
+		<meta name="date" content="2025-12-08">
+		<link rel="stylesheet" href="/style.css">
+		<link rel="icon" href="/favicon.ico" />
+	</head>
+	<body>
+		<div class="page page-writing">
+			<header>
+				<special>笑</special> | <a class="ff" href="/">zedkaido.com</a> &gt; <a class="ff" href="/writing">writing</a> | <a href="/rss.xml">RSS</a>
+			</header>
+			<article>
+
+				<tag>#bash</tag> <tag>#aliasrc</tag>
+				<br>
+				<div class="creds">
+					<b>2025-12-08</b>
+				</div>
+				<div class="creds">
+					Courtesy of <code>help fc</code>
+				</div>
+
+				<h1>
+					<code>alias r='fc -s'</code>
+				</h1>
+
+				<p>
+				With the <code>fc -s [pat=rep ...] [command]</code> format, <code>command</code> is re-executed after performing the <code>OLD=NEW</code> substitution.
+				</p>
+
+				<p>
+				A useful alias for it is <code>r='fc -s'</code>, so that:
+				<li>typing <code>r</code> re-executes the last cmd.</li>
+				<li>typing <code>r cc</code> executes your last command beginning with <code>cc</code>.</li>
+				<li>typing <code>r mkdi=mkdir</code> applies <code>patt=rep</code> sub to the last command in history.</li>
+				<li>typing <code>r v1=v2 curl</code> would search for the last <code>curl</code> command in history and re-execute it with applied replacement.</li>
+				</p>
+
+<div class="pre-header">
+bash
+</div>
+<pre>
+r='fc -s' <comment># add `alias r='fc -s' to your ~/.aliasrc to make it permanent.</comment>
+
+<hr>
+<uns>$ </uns>cc file.c -o progrm
+<uns>$ </uns>r cc
+cc file.c -o program
+
+<hr>
+<uns>$ </uns>cat README
+<uns>$ </uns>r 
+cat README
+
+<hr>
+<uns>$ </uns>mkdi -p a/b/c/dir
+<uns>$ </uns>r mkdi=mkdir
+mkdir -p a/b/c/dir
+
+<hr>
+<uns>$ </uns>curl https://api.example.com/v1 
+<uns>$ </uns>r v1=v2 curl
+curl https://api.example.com/v2
+</pre>
+
+				<p>
+				In the same vein, you can add <code>^pat^rep</code> and <code>!!</code> to your term-fu arsenal, the difference being that, these only apply to the previous command in history:
+				</p>
+
+<div class="pre-header">
+bash
+</div>
+<pre>
+<uns>$ </uns>cd /usr/locl/bin
+<uns>$ </uns>^locl^local
+cd /usr/local/bin
+
+<hr>
+<uns>$ </uns>tar tf backup.tar.gz <comment># list (t)able of contents for (f)file</comment>
+<uns>$ </uns>^tf^xzf
+tar xzf backup.tar.gz <comment># (x)extract (z)gzip (f)file</comment>
+
+<hr>
+<uns>$ </uns>ls
+<uns>$ </uns>!!
+ls
+
+<hr>
+<uns>$ </uns>vim /etc/hosts</uns>
+<uns>$ </uns>sudo !!
+sudo vim /etc/hosts
+
+<hr>
+<uns>$ </uns>ecgo test
+<uns>$ </uns>!!:s/ecgo/echo  <comment># vim users, do you recognize this?</comment>
+echo hi
+
+<hr>
+<uns>$ </uns>curl https://api.example.com
+<uns>$ </uns>!! | jq
+curl https://api.example.com | jq
+
+<hr>
+<uns>$ </uns>ls *.tmp
+<uns>$ </uns>!! | xargs rm
+ls *.tmp | xargs rm
+</pre>
+
+			</article>
+
+			<opus-humanum>OPUS HUMANUM</opus-humanum>
+		</div>
+		<script>
+			document.querySelectorAll('a.ff').forEach(a => {
+				a.addEventListener('mousedown', e => { if (e.button == 0) this.location = a.href; })
+			});
+		</script>
+	</body>
+</html>

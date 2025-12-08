@@ -411,12 +411,22 @@ pre {
 	border: 1px solid var(--color-fg);
 }
 
-pre .comment {
+pre comment, .comment {
 	color: var(--color-grey);
 }
 
-pre comment {
-	color: var(--color-grey);
+pre hr {
+	margin: 0;	
+	border-color: var(--color-grey);
+}
+
+uns {
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 textarea {
