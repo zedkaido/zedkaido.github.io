@@ -383,15 +383,10 @@ highlight, hi {
 	padding: 0 0.1em;
 }
 
-.tag {
+code, tag, .tag {
 	background-color: var(--color-code-bg);
-}
-
-code {
-	background: var(--color-code-bg);
 	color: var(--color-code-fg);
 	box-sizing: border-box;	
-	font-weight: bold;
 	padding: 0 0.1em;
 	margin: 0 -0.1em;
 }
