@@ -361,7 +361,10 @@ article .creds {
 }
 
 ul li {
-	list-style-type: none;
+	list-style-type: square;
+}
+
+li {
 	list-style-type: square;
 }
 
