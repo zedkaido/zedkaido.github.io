@@ -60,6 +60,7 @@ const quotes = [
 	"A wise man will climb Fuji once, only a fool climbs it twice.",
 	"Don't be a noun, be a verb.",
 	"Thinking, a donkey died.",
+	"And yet it moves.",
 	"Essentially, all models are wrong, but some are useful.",
 	"A complex system usually reflects an absence of good design.",
 	"Dream so big that you can't get any goal.",
