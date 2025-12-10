@@ -17,13 +17,24 @@
 			line-height: 1.5em;
 			text-wrap: balance;
 		}
-		.zedkaido img {
+
+		.zk-pic {
 			position: relative;
 			width: 100%;
 			height: 3em; 
-			object-fit: cover;
 			border: 1px solid var(--color-fg);
+			overflow: hidden;
 		}
+		.zk-pic img {
+			position: absolute; 
+			object-fit: cover;
+			top: 0; left: 0;
+			width: 100%;
+			height: 3em;
+			background-size: cover !important; 
+			background-position: center !important;
+		}
+
 		.zedkaido h1 {
 			font-size: 3.1em;
 			margin: 0.3em 0;
@@ -61,10 +72,13 @@
 					</p> </nav> </div>
 
 			<div class="zedkaido">
-				<a href="https://images.zedkaido.com/zk/zk-360-q93.webp" target="_blank">
-					<img loading="eager" fetchpriority="high" alt="Photo of Zed Kaido"
-				   	     width=180 src="https://images.zedkaido.com/zk/zk-360-q93.webp"/>
+				<a href="/public/images/zk-2025-500-q93.webp" aria-label="Link to photo of Zed Kaido" target="_blank">
+					<div class="zk-pic">
+						<img src="/public/images/zk-2025-500-q93.webp" alt="Photo of Zed Kaido"
+							 style="background: url('public/images/zk-2025-10-q1.webp');" />
+					</div>
 				</a>
+
 				<h1><big>Z</big>ed <big>K</big>aido</h1>
 				<hr>
 				<p>
@@ -90,7 +104,7 @@
 
 				<p>
 				pub   ed25519/C9B70CAB08370946 [SC]<br>
-				<a href="/zk-pub-key.asc" target="_blank">F2A71629C3423DCBE039D6DFC9B70CAB08370946</a> <b>[<a href="/zk-pub-key.txt" target="_blank">TXT</a>]</b><br>
+				<a href="/zk-pub-key.asc" target="_blank" aria-label="Download Zed's PGP Key">F2A71629C3423DCBE039D6DFC9B70CAB08370946</a> <b>[<a href="/zk-pub-key.txt" target="_blank">TXT</a>]</b><br>
 				sub   cv25519/4F673365C11B16FE [E]
 				</p>
 			</footer>
