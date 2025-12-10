@@ -28,6 +28,15 @@
 	object-fit: cover;
 	.user-drag: none;
 	-webkit-user-drag: none;
+	background-size: cover !important;
+	background-position: center !important;
+}
+
+@media (max-width: 420px) {
+	.tp-cover img {
+		width: 100%;
+		height: auto;
+	}
 }
 
 .tp-section {
@@ -173,7 +182,6 @@
 }
 .tp-credits small { text-transform: uppercase;	}
 .tp-description small { text-transform: uppercase;	}
-
 
 @media (max-width: 222px) {
 	.tp-cover {
